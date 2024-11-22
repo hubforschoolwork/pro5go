@@ -1,3 +1,25 @@
+body {
+  /* background-color: #2b9b09; */
+  background-image: url('./assets/tree-6835828_1280.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
