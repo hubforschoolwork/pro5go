@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Loginform from '../components/login.jsx';
+import Loginform from '../components/loginform.jsx';
 
 
 <div>
@@ -12,13 +12,13 @@ import Loginform from '../components/login.jsx';
 
 function App() {
 
-
   return (
-
 
 <Router>
 
 <div className="App">
+
+
 
       {/* <MyNavbar /> */}
 
@@ -27,7 +27,7 @@ function App() {
           <Route path="/" element={<Todo/>} />
 
 
-          <Route path="/login" element={<Loginform/>} />
+          <Route path="/login" element={<Login/>} />
 
 
         </Routes>
