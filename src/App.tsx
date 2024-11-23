@@ -9,7 +9,7 @@ function App() {
 
 <div>
       <h1>Winter Wonderland</h1>
-      <h2>Your guide to festive fun and all things winter!!!</h2>
+      <h2>Experience the Magic of the Season!</h2>
 </div>
 
 
