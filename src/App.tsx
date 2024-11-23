@@ -1,11 +1,8 @@
 import { useState } from 'react'
-import './App.css'
-import LoginForm from './components/login.jsx';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Loginform from '../components/login.jsx';
 
-function App() {
-
-
-  return (
 
 <div>
       <h1>Winter Wonderland</h1>
@@ -13,6 +10,31 @@ function App() {
 </div>
 
 
+function App() {
+
+
+  return (
+
+
+<Router>
+
+<div className="App">
+
+      {/* <MyNavbar /> */}
+
+        <Routes>
+
+          <Route path="/" element={<Todo/>} />
+
+
+          <Route path="/login" element={<Loginform/>} />
+
+
+        </Routes>
+
+</div>
+
+</Router>
 
 
   )
