@@ -4,10 +4,10 @@ import './App.css';
 import Loginform from '../components/loginform.jsx';
 
 
-<div>
+{/* <div>
       <h1>Winter Wonderland</h1>
       <h2>Experience the Magic of the Season!</h2>
-</div>
+</div> */}
 
 
 function App() {
@@ -20,11 +20,11 @@ function App() {
 
 
 
-      {/* <MyNavbar /> */}
+      <MyNavbar />
 
         <Routes>
 
-          <Route path="/" element={<Todo/>} />
+          {/* <Route path="/" element={<Todo/>} /> */}
 
 
           <Route path="/login" element={<Login/>} />
