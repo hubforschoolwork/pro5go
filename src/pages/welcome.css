@@ -5,6 +5,25 @@
     background-repeat: no-repeat;
   }
  
+
+.welcome-button {
+    background-color: white;
+    color: black;
+    border-radius:5px;
+    width:15vw;
+    height:30px;
+    text-align: center;
+    margin-bottom: 25%;
+    padding-top: 25%;
+    align-items: center;
+    outline: auto;
+}
+
+
+
+
+
+
   
   .form-container {
     display: flex;

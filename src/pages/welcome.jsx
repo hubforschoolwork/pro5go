@@ -1,6 +1,6 @@
 import React from 'react';
-import './welcome.css'
-import '..welcomebutton.jsx'
+import './welcome.css';
+import Welcomebutton from '../components/welcomebutton.jsx';
 
 
 
