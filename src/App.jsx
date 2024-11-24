@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MyNavbar from './components/navbar';
 import './App.css';
 import Login from './pages/login.jsx';
-// import Todo from './pages/todo.jsx';
+import Registeruser from './pages/register.jsx';
 
 {/* <div>
       <h1>Winter Wonderland</h1>
@@ -29,7 +29,7 @@ function App() {
 
 
           <Route path="/login" element={<Login/>} />
-
+          <Route path="/register" element={<Registeruser/>} />
 
         </Routes>
 
