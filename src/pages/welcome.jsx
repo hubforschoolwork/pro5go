@@ -14,7 +14,7 @@ function Welcome() {
             <h2>Experience the Magic of the Season!</h2>
         </div>
 
-            <Welcomebutton />
+        <Welcomebutton />
            
         </div>
         </>
