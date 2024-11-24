@@ -4,12 +4,7 @@ import MyNavbar from './components/navbar';
 import './App.css';
 import Login from './pages/login.jsx';
 import Registeruser from './pages/register.jsx';
-
-{/* <div>
-      <h1>Winter Wonderland</h1>
-      <h2>Experience the Magic of the Season!</h2>
-</div> */}
-
+import Welcome from './pages/welcome.jsx';
 
 function App() {
 
@@ -19,14 +14,11 @@ function App() {
 
 <div className="App">
 
-
-
       <MyNavbar />
 
         <Routes>
 
-          {/* <Route path="/" element={<Todo/>} /> */}
-
+          <Route path="/" element={<Welcome/>} />
 
           <Route path="/login" element={<Login/>} />
           <Route path="/register" element={<Registeruser/>} />
