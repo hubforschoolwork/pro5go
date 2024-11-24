@@ -2,38 +2,41 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 
-const MyNavbar = () => {
-  return (
-  <div className="container-bar">
-    <nav className="navbar navbar-expand-lg bg-info border-bottom border-body" data-bs-theme="primary%">
 
-  <div className="container-fluid">
-    <a className="navbar-brand" href="#">WW</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
+const Navbar = () => {
+    return (
+        <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top"> {/* Apply the fixed-top class here */}
+            <div className="container">
+                <a className="navbar-brand" href="#">Winter Wonderland</a>
 
-  <div className="collapse navbar-collapse" id="navbarText">
-    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-      <li className="nav-item">
-        <Link className="nav-link active" aria-current="page" to="/">Register</Link>
-      </li>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
 
-      <li className="nav-item">
-        <Link className="nav-link" to="/login">Sign In</Link>
-      </li>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav">
 
-    </ul>
+                        <li className="nav-item active">
+                            <a className="nav-link" href="/">Home <span className="sr-only"></span></a>
+                        </li>
+                      
+                        <li className="nav-item">
+                            <a className="nav-link" href="/login">Log In</a>
+                        </li>
+                      
+                        <li className="nav-item">
+                            <a className="nav-link" href="/register">Register</a>
+                        </li>
+                       
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Test Link</a>
+                        </li>
 
-  </div>
-  </div>
-  </nav>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    );
+}
 
-</div>
-
-
-  );
-};
-
-export default MyNavbar;
-
+export default Navbar;

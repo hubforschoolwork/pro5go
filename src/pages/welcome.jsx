@@ -4,7 +4,6 @@ import Welcomebutton from '../components/welcomebutton.jsx';
 
 
 
-
 function Welcome() {
     return (
         <>
@@ -20,6 +19,6 @@ function Welcome() {
         </>
     );
 }
-
 export default Welcome;
+
 

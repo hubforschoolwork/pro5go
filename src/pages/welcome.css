@@ -4,7 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
- 
+
 
 .welcome-button {
     background-color: white;
@@ -20,7 +20,7 @@
 }
 
   
-  .form-container {
+.form-container {
     display: flex;
     justify-content: right;
     flex-direction: column;

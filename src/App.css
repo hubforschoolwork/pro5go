@@ -5,6 +5,8 @@
   text-align: center;
 }
 
-
+body {
+  padding-top: 56px; /* adjust based on your navbar height */
+}
 
 
