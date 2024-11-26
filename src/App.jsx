@@ -5,6 +5,7 @@ import './App.css';
 import Login from './pages/login.jsx';
 import Registeruser from './pages/register.jsx';
 import Welcome from './pages/welcome.jsx';
+import Dashboard from './components/dashboardc';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
 <div className="App">
 
       <MyNavbar />
+      <Dashboard />
 
         <Routes>
 
