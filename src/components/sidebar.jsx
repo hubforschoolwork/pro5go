@@ -6,18 +6,23 @@ const Sidebar = () => {
         <div className="sidebar d-flex flex-column bg-dark text-white vh-100">
             <h2 className="p-3">Dashboard</h2>
             <ul className="nav flex-column">
+
                 <li className="nav-item">
-                    <a href="#" className="nav-link text-white">Home</a>
+                    <a href="#" className="nav-link text-white">Outdoor Activities</a>
                 </li>
                 <li className="nav-item">
-                    <a href="#" className="nav-link text-white">Analytics</a>
+                    <a href="#" className="nav-link text-white">Indoor Activities</a>
                 </li>
                 <li className="nav-item">
-                    <a href="#" className="nav-link text-white">Settings</a>
+                    <a href="#" className="nav-link text-white">Cooking/Recipes</a>
                 </li>
                 <li className="nav-item">
-                    <a href="#" className="nav-link text-white">Logout</a>
+                    <a href="#" className="nav-link text-white">Gift Shopping</a>
                 </li>
+                <li className="nav-item">
+                    <a href="#" className="nav-link text-white">Sports</a>
+                </li>
+
             </ul>
         </div>
     );
