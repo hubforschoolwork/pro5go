@@ -4,7 +4,9 @@ import React from 'react';
 const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top"> {/* Apply the fixed-top class here */}
-            <div className="container">
+            {/* <div className="container"> */}
+
+            <div className="container-fluid">
                 <a className="navbar-brand" href="/">Winter Wonderland</a>
 
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,11 +36,9 @@ const Navbar = () => {
                 </div>
 
                 <div class="d-flex align-items-center">
-        <span class="text-danger me-2">Live Quotes:</span>
-        <a href="/login" target="_blank" rel="noopener noreferrer"
-          class="btn btn-outline-success me-2 btn-lg">Login</a>
-        <a href="https://finance.yahoo.com/quote/GE/" target="_blank" rel="noopener noreferrer"
-          class="btn btn-outline-primary me-2 btn-lg">Register</a>
+                    <span class="text-danger me-2">ENTER:</span>
+                        <a href="/login" class="btn btn-secondary me-2">Login</a>
+                        <a href="/register" class="btn btn-secondary me-2">Register</a>
       </div>
 
 
