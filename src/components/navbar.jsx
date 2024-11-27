@@ -32,6 +32,16 @@ const Navbar = () => {
 
                     </ul>
                 </div>
+
+                <div class="d-flex align-items-center">
+        <span class="text-danger me-2">Live Quotes:</span>
+        <a href="/login" target="_blank" rel="noopener noreferrer"
+          class="btn btn-outline-success me-2 btn-lg">Login</a>
+        <a href="https://finance.yahoo.com/quote/GE/" target="_blank" rel="noopener noreferrer"
+          class="btn btn-outline-primary me-2 btn-lg">Register</a>
+      </div>
+
+
             </div>
         </nav>
     );
