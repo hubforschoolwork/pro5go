@@ -16,8 +16,6 @@ function App() {
 <div className="App">
 
       <MyNavbar />
-      <Dashboard />
-
         <Routes>
 
           <Route path="/" element={<Welcome/>} />
