@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 const Welcomebutton = () => {
     return (
         <Link to="/welcome" className="welcome-button">
-             <button>Enter</button>
+             <button type="submit">Enter</button>
         </Link>
     )
 }
