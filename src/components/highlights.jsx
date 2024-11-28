@@ -8,6 +8,8 @@ const Highlights = () => {
                 <h1>Welcome to Winter Wonderland!</h1>
                 <p>This site is dedicated to all things winter and all things fun.  Here are a few things you can discover:</p>
 
+            <div class="container">
+            <div>
                 <ul className="nav flex-column">
 
                     <li>
@@ -19,7 +21,7 @@ const Highlights = () => {
                     </li>
 
                     <li>
-                        Cooking/Recipes
+                        Cooking / Baking / Recipes
                     </li>
 
                     <li>
@@ -30,14 +32,14 @@ const Highlights = () => {
                         Decorating
                     </li>
 
-
-
-
                     {/* <li className="nav-item">
                         <a href="#" className="nav-link text-white">Sports</a>
                     </li> */}
 
                 </ul>
+            </div>
+            </div>
+
 
 
             </div>
