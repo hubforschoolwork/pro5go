@@ -7,6 +7,8 @@ import Registeruser from './pages/register.jsx';
 import Welcome from './pages/welcome.jsx';
 import Highlights from './components/highlights';
 
+
+
 function App() {
 
   return (
@@ -16,7 +18,7 @@ function App() {
 <div className="App">
 
       <MyNavbar />
-      <Highlights />
+
         <Routes>
 
           <Route path="/" element={<Welcome/>} />
@@ -24,7 +26,10 @@ function App() {
           <Route path="/login" element={<Login/>} />
           <Route path="/register" element={<Registeruser/>} />
 
+
         </Routes>
+
+        <Highlights />
 
 </div>
 
