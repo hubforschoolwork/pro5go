@@ -1,6 +1,6 @@
 import React from 'react';
-import './welcome.css';
-import Welcomebutton from '../components/welcomebutton.jsx';
+// import './welcome.css';
+// import Welcomebutton from '../components/welcomebutton.jsx';
 
 
 
@@ -13,7 +13,7 @@ function Welcome() {
             <h2>Experience the Magic of the Season!</h2>
         </div>
 
-        <Welcomebutton />
+        {/* <Welcomebutton /> */}
            
         </div>
         </>
