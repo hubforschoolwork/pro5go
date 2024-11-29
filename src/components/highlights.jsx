@@ -6,7 +6,7 @@ const Highlights = () => {
 
             <div className="content p-4">
                 <h1>Welcome to Winter Wonderland!</h1>
-                <p>This site is dedicated to all things winter and all things fun.  Here are a few things you can discover:</p>
+                <h2><p>This site is dedicated to all things winter and all things fun.  Here are a few things you can discover:</p></h2>
 
             <div class="container">
             <div>
