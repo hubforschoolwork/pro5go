@@ -1,16 +1,20 @@
 import React from 'react';
 import Dashboard from '../components/dashboardc.jsx';
+import Sidebar from '../components/sidebar.jsx';
 import './cooking.css'
 
 function Cookingb() {
     return (
         <>
+        <Sidebar />
+        <Dashboard />
+
         <div className="form-container">
             <h3>Winter Cooking</h3>
 
-            <Dashboard />
+
         </div>
-        
+
         <div>
                 <h3>Hello Winter Fan!</h3>
 

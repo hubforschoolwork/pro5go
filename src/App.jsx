@@ -7,6 +7,7 @@ import Registeruser from './pages/register.jsx';
 import Welcome from './pages/welcome.jsx';
 import Guest from './pages/guestarea.jsx';
 import Testlink from './pages/testlink.jsx';
+import Cookingb from './pages/cooking.jsx';
 // import Indoor from './pages/indoor.jsx';
 // import Outdoor from './pages/outdoor.jsx';
 // import Giftshopping from './pages/giftshopping.jsx';

@@ -8,19 +8,19 @@ const Sidebar = () => {
             <ul className="nav flex-column">
 
                 <li className="nav-item">
-                    <a href="#" className="nav-link text-white">Outdoor Activities</a>
+                    <a href="/outdoor" className="nav-link text-white">Outdoor Activities</a>
                 </li>
                 <li className="nav-item">
-                    <a href="#" className="nav-link text-white">Indoor Activities</a>
+                    <a href="/indoor" className="nav-link text-white">Indoor Activities</a>
                 </li>
                 <li className="nav-item">
-                    <a href="#" className="nav-link text-white">Cooking/Recipes</a>
+                    <a href="/cooking" className="nav-link text-white">Cooking/Recipes</a>
                 </li>
                 <li className="nav-item">
-                    <a href="#" className="nav-link text-white">Gift Shopping</a>
+                    <a href="giftshopping" className="nav-link text-white">Gift Shopping</a>
                 </li>
                 <li className="nav-item">
-                    <a href="#" className="nav-link text-white">Sports</a>
+                    <a href="/sports" className="nav-link text-white">Sports</a>
                 </li>
 
             </ul>
