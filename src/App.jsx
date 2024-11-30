@@ -10,7 +10,7 @@ import Testlink from './pages/testlink.jsx';
 import Cookingb from './pages/cooking.jsx';
 // import Indoor from './pages/indoor.jsx';
 // import Outdoor from './pages/outdoor.jsx';
-// import Giftshopping from './pages/giftshopping.jsx';
+import Giftshopping from './pages/giftshopping.jsx';
 // import Sports from './pages/sports.jsx';
 
 
@@ -33,13 +33,17 @@ function App() {
           <Route path="/guestarea" element={<Guest/>} />
           <Route path="/testlink" element={<Testlink/>} />
 
-          {/* <Route path="/indoor" element={<Indoor/>} />
+          <Route path="/indoor" element={<Indoor/>} />
           <Route path="/outdoor" element={<Outdoor/>} />
           <Route path="/giftshopping" element={<Giftshopping/>} />
-          <Route path="/sports" element={<Sports/>} /> */}
-          <Route path="/cooking" element={<Cookingb/>} />
 
+
+          <Route path="/sports" element={<Sports/>} />
+
+
+          <Route path="/cooking" element={<Cookingb/>} />
           <Route path="/cooking" element={<cooking/>} />
+
         </Routes>
 </div>
 

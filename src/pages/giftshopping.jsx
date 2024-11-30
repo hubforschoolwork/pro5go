@@ -1,20 +1,29 @@
 import React from 'react';
-import Highlights from '../components/highlights.jsx';
+import Dashboard from '../components/dashboardc.jsx';
 import './giftshopping.css'
 
-function Guest() {
+function Giftshopping() {
     return (
-        // <div className="form-container">
-    
-        <div>
-        <h3>Hello Winter Fan!</h3>
-            
-            <Highlights />
+        <>
+        <Dashboard />
+
+        <div className="form-container">
+            <h3>Gift Shopping</h3>
         </div>
+
+        <div>
+                <h2>Great ideas for all the people on your Christmas list!</h2>
+
+            </div>
+        </>
     );
 }
 
-export default Guest;
+export default Giftshopping;
+
+
+
+
 
 
 
