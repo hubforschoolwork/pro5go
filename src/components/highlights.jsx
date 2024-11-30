@@ -37,6 +37,14 @@ const Highlights = () => {
                     </li>
                 </ul>
             </div>
+
+            <div>
+          <h5>
+                <p>To join in on the fun and explore these wintertime activities, sign-up for your free account!</p>
+
+                </h5>
+                </div>
+
         </div>
 </div>
 

@@ -7,11 +7,11 @@ import Registeruser from './pages/register.jsx';
 import Welcome from './pages/welcome.jsx';
 import Guest from './pages/guestarea.jsx';
 import Testlink from './pages/testlink.jsx';
-import Indoor from './pages/indoor.jsx';
-import Outdoor from './pages/outdoor.jsx';
-import Giftshopping from './pages/giftshopping.jsx';
-import Sports from './pages/sports.jsx';
-// import Cooking from './pages/cooking.jsx';
+// import Indoor from './pages/indoor.jsx';
+// import Outdoor from './pages/outdoor.jsx';
+// import Giftshopping from './pages/giftshopping.jsx';
+// import Sports from './pages/sports.jsx';
+// // import Cooking from './pages/cooking.jsx';
 
 function App() {
 
@@ -32,11 +32,11 @@ function App() {
           <Route path="/guestarea" element={<Guest/>} />
           <Route path="/testlink" element={<Testlink/>} />
 
-          <Route path="/indoor" element={<Indoor/>} />
+          {/* <Route path="/indoor" element={<Indoor/>} />
           <Route path="/outdoor" element={<Outdoor/>} />
           <Route path="/giftshopping" element={<Giftshopping/>} />
           <Route path="/sports" element={<Sports/>} />
-          {/* <Route path="/cooking" element={<Cooking/>} /> */}
+          <Route path="/cooking" element={<Cooking/>} /> */}
         </Routes>
 </div>
 
