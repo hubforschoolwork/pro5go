@@ -38,6 +38,8 @@ function App() {
           <Route path="/giftshopping" element={<Giftshopping/>} />
           <Route path="/sports" element={<Sports/>} /> */}
           <Route path="/cooking" element={<Cookingb/>} />
+
+          <Route path="/cooking" element={<cooking/>} />
         </Routes>
 </div>
 
