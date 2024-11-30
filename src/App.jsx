@@ -11,7 +11,7 @@ import Testlink from './pages/testlink.jsx';
 // import Outdoor from './pages/outdoor.jsx';
 // import Giftshopping from './pages/giftshopping.jsx';
 // import Sports from './pages/sports.jsx';
-// // import Cooking from './pages/cooking.jsx';
+
 
 function App() {
 
@@ -35,8 +35,8 @@ function App() {
           {/* <Route path="/indoor" element={<Indoor/>} />
           <Route path="/outdoor" element={<Outdoor/>} />
           <Route path="/giftshopping" element={<Giftshopping/>} />
-          <Route path="/sports" element={<Sports/>} />
-          <Route path="/cooking" element={<Cooking/>} /> */}
+          <Route path="/sports" element={<Sports/>} /> */}
+          <Route path="/cooking" element={<Cookingb/>} />
         </Routes>
 </div>
 
