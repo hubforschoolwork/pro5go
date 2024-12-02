@@ -11,9 +11,8 @@ import Cooking from '/src/pages/cooking.jsx';
 import Dashboard from './pages/dashboard.jsx';
 import Giftshopping from './pages/giftshopping.jsx'
 import Indoor from '/src/pages/indoor.jsx';
+import Sports from '/src/pages/sports.jsx';
 // import Outdoor from './pages/outdoor.jsx';
-// import Sports from './pages/sports.jsx';
-
 
 function App() {
 
@@ -37,13 +36,10 @@ function App() {
           <Route path="/dashboard" element={<Dashboard/>} />
           <Route path="/giftshopping" element={<Giftshopping/>} />
           <Route path="/indoor" element={<Indoor/>} />
-
+          <Route path="/sports" element={<Sports />} />
 
 
           {/* <Route path="/outdoor" element={<Outdoor/>} /> */}
-
-          {/* <Route path="/sports" element={<Sports />} /> */} */ */
-
 
         </Routes>
 </div>
