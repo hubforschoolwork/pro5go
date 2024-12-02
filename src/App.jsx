@@ -34,10 +34,10 @@ function App() {
           <Route path="/testlink" element={<Testlink/>} />
           <Route path="/cooking" element={<Cooking/>} />
 
-          /* <Route path="/indoor" element={<Indoor/>} />
+          {/* /* <Route path="/indoor" element={<Indoor/>} />
           <Route path="/outdoor" element={<Outdoor/>} />
           <Route path="/giftshopping" element={<Giftshopping/>} />
-          <Route path="/sports" element={<Sports />} />
+          <Route path="/sports" element={<Sports />} /> */}
 
         </Routes>
 </div>
