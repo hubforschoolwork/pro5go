@@ -5,8 +5,6 @@ import Dashboard from '../components/dashboardc.jsx';
 function Cookingb() {
     return (
         <>
-        <Dashboard />
-
         <div className="form-container">
             <h3>Winter Cooking</h3>
         </div>

@@ -8,10 +8,10 @@ function Cooking() {
         <>
         <Dashboard />
 
-
         <div className="form-container">
-            <h3>Winter Cooking</h3>
+
         </div>
+
         <Cookingb />
 
         </>
