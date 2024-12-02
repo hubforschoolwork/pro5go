@@ -1,5 +1,4 @@
 import React from 'react';
-import Dashboardc from '../components/dashboardc.jsx';
 import Cookingb from '../components/cookinghub.jsx';
 import Sidebar from '../components/sidebar.jsx';
 import './cooking.css'

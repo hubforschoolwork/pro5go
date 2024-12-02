@@ -1,29 +1,22 @@
 import React from 'react';
-import Dashboard from '../components/dashboardc.jsx';
+import Giftshoppingbag from '../components/gifts.jsx';
+import Sidebar from '../components/sidebar.jsx';
 import './giftshopping.css'
 
 function Giftshopping() {
     return (
         <>
-        <Dashboard />
+        <Sidebar />
 
         <div className="form-container">
-            <h3>Gift Shopping</h3>
+
         </div>
 
-        <div>
-                <h2>Great ideas for all the people on your Christmas list!</h2>
+        <Giftshoppingbag />
 
-            </div>
         </>
     );
 }
 
 export default Giftshopping;
-
-
-
-
-
-
 
