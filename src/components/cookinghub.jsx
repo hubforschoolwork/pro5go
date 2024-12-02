@@ -1,5 +1,4 @@
 import React from 'react';
-import Dashboard from '../components/dashboardc.jsx';
 // import './cooking.css'
 
 function Cookingb() {

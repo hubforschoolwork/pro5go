@@ -1,12 +1,14 @@
 import React from 'react';
-import Dashboard from '../components/dashboardc.jsx';
+import Dashboardc from '../components/dashboardc.jsx';
 import Cookingb from '../components/cookinghub.jsx';
+import Sidebar from '../components/sidebar.jsx';
 import './cooking.css'
 
 function Cooking() {
     return (
         <>
-        <Dashboard />
+        {/* <Dashboard /> */}
+        <Sidebar />
 
         <div className="form-container">
 
