@@ -1,22 +1,23 @@
 import React from 'react';
-import Dashboard from '../components/dashboardc.jsx';
-import './guestarea.css'
+import Outdoorgalore from '../components/outdoorfun.jsx';
+import Sidebar from '../components/sidebar.jsx';
+import './outdoor.css'
 
 function Outdoor() {
     return (
-
         <>
-        <Dashboard /><div className="form-container">
-            <div>
-                <h3>Welcome Outdoor Visitor</h3>
+        {/* <Dashboard /> */}
+        <Sidebar />
 
+        <div className="form-container">
 
-                <h3>Hello Winter Fan!</h3>
-            </div>
         </div>
-        </>
 
+        <Outdoorgalore />
+
+        </>
     );
 }
 
 export default Outdoor;
+

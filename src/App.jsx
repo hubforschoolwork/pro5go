@@ -12,7 +12,7 @@ import Dashboard from './pages/dashboard.jsx';
 import Giftshopping from './pages/giftshopping.jsx'
 import Indoor from '/src/pages/indoor.jsx';
 import Sports from '/src/pages/sports.jsx';
-// import Outdoor from './pages/outdoor.jsx';
+import Outdoor from './pages/outdoor.jsx';
 
 function App() {
 
@@ -37,9 +37,7 @@ function App() {
           <Route path="/giftshopping" element={<Giftshopping/>} />
           <Route path="/indoor" element={<Indoor/>} />
           <Route path="/sports" element={<Sports />} />
-
-
-          {/* <Route path="/outdoor" element={<Outdoor/>} /> */}
+          <Route path="/outdoor" element={<Outdoor/>} />
 
         </Routes>
 </div>
