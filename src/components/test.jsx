@@ -1,3 +1,8 @@
+// can be placed in app.jsx
+
+//Now, you can import and use the getTestData function in any component where you need it. For example, in App.jsx:
+
+
 import React, { useEffect, useState } from 'react';
 import { getTestData } from './api';
 
