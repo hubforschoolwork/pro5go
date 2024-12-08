@@ -1,0 +1,34 @@
+[
+    {
+      "id": 1,
+      "name": "Alice Smith",
+      "email": "alice@example.com",
+      "password": "hashed_password_1"
+    },
+    {
+      "id": 2,
+      "name": "Bob Jones",
+      "email": "bob@example.com",
+      "password": "hashed_password_2"
+    },
+    {
+        "id": 3,
+        "name": "Sam Smith",
+        "email": "sam@example.com",
+        "password": "hashed_password_3"
+    },
+    {
+        "id": 4,
+        "name": "Mary Adams",
+        "email": "mary@example.com",
+        "password": "hashed_password_4"
+    },
+    {
+        "id": 5,
+        "name": "James Montford",
+        "email": "james@example.com",
+        "password": "hashed_password_5"
+    }
+
+  ]
+  
