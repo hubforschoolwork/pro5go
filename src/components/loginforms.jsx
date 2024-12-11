@@ -24,12 +24,12 @@ function Loginform() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <div className='form-grid'>                
+            <div className='form-grid'>
                 <label>Username:
                     <input type="text" id='username' name="username" value={formData.username} onChange={handleChange} />
                 </label>
             </div>
-            
+
             <div className='form-grid'>
                 <label>Password:
                     <input type="text" id='password' name="password" value={formData.password} onChange={handleChange} />
@@ -37,11 +37,12 @@ function Loginform() {
             </div>
 
 
-            <div className='form-grid'>
-                <button type="submit" id='button'>Submit</button>
-                {submissionStatus && <p>{submissionStatus}</p>}
-            </div>
-        </form>
+                <div className='form-grid'>
+                    <button type="submit" id='button'>Submit</button>
+                    {submissionStatus && <p>{submissionStatus}</p>}
+                </div>
+            </form>
+
     );
 }
 
