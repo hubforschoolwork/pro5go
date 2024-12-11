@@ -43,18 +43,6 @@ function Register() {
                 </label>
             </div>
 
-            {/* <div className='form-check'>
-                <label>
-                    <input 
-                        type="checkbox" 
-                        id="terms" 
-                        name="terms" 
-                        checked={formData.terms} 
-                        onChange={handleChange} 
-                    />
-                    I agree to the terms and conditions.
-                </label>
-            </div> */}
 
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input>
@@ -62,9 +50,6 @@ function Register() {
                 I agree to the terms and conditions of this website.
                 </label>
             </div>
-
-
-
 
 
             <div className='form-grid'>
