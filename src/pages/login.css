@@ -21,6 +21,8 @@
     gap: 20px;
     align-items: center;
     padding: 2%;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 label {
@@ -40,10 +42,17 @@ input {
     width:15vw;
     height:30px;
     text-align: center;
-    margin-bottom: 25%;
+    margin-bottom: 50%;
+    margin-top: 50%;
     padding-top: 40%;
     align-items: center;
     outline: auto;
+}
+
+
+.error-message {
+    color: red;
+    margin-top: 10px;
 }
 
 @media (max-width: 600px) {

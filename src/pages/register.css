@@ -61,4 +61,14 @@ input {
 .form-check {
     text-align: left;
     padding-top:  10%;
+
+}
+
+.flexCheckDefault {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-top: 10%;
+    outline: black;
+    color: black;
 }
