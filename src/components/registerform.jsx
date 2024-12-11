@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 function Register() {
     const [formData, setFormData] = useState({ username: '', password: '', repeatpassword: ''});
     const [submissionStatus, setSubmissionStatus] = useState('');
@@ -44,13 +45,7 @@ function Register() {
             </div>
 
 
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input>
-                <label class="form-check-label" for="flexCheckDefault">
-                I agree to the terms and conditions of this website.
-                </label>
-            </div>
-
+<p>*Our terms of use and privacy policies apply to all visitors who access our website.  By submitting your registration, you are in agreement with these terms.</p>
 
             <div className='form-grid'>
                 <button type="submit" id='button'>Submit</button>

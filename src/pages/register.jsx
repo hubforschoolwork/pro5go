@@ -1,6 +1,7 @@
 import React from 'react';
 import Register from '../components/registerform.jsx';
-import './register.css'
+import './register.css';
+
 
 function Registeruser() {
     return (
@@ -8,6 +9,7 @@ function Registeruser() {
             <h3>Register</h3>
             
             <Register />
+
         </div>
     );
 }
