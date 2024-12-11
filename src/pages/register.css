@@ -7,19 +7,22 @@
     color: black;
 }
 
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 200px auto;
+    gap: 50px;
+    align-items: center;
+    text-align: left;
+}
+
+
 .contact-container {
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
     padding-bottom: 2rem;
-}
-
-.form-grid {
-    display: grid;
-    grid-template-columns: 150px auto;
-    gap: 50px;
-    align-items: center;
 }
 
 label {
@@ -53,4 +56,9 @@ input {
     label {
         width: auto;
     }
+}
+
+.form-check {
+    text-align: left;
+    padding-top:  10%;
 }

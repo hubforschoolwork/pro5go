@@ -23,13 +23,14 @@ function Register() {
     };
 
     return (
+        <>
         <form onSubmit={handleSubmit}>
-            <div className='form-grid'>                
+            <div className='form-grid'>
                 <label>Username:
                     <input type="text" id='username' name="username" value={formData.username} onChange={handleChange} />
                 </label>
             </div>
-            
+
             <div className='form-grid'>
                 <label>Password:
                     <input type="text" id='password' name="password" value={formData.password} onChange={handleChange} />
@@ -42,6 +43,28 @@ function Register() {
                 </label>
             </div>
 
+            {/* <div className='form-check'>
+                <label>
+                    <input 
+                        type="checkbox" 
+                        id="terms" 
+                        name="terms" 
+                        checked={formData.terms} 
+                        onChange={handleChange} 
+                    />
+                    I agree to the terms and conditions.
+                </label>
+            </div> */}
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input>
+                <label class="form-check-label" for="flexCheckDefault">
+                I agree to the terms and conditions of this website.
+                </label>
+            </div>
+
+
+
 
 
             <div className='form-grid'>
@@ -49,6 +72,9 @@ function Register() {
                 {submissionStatus && <p>{submissionStatus}</p>}
             </div>
         </form>
+        
+             </>
+
     );
 }
 
