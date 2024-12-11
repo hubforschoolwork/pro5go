@@ -44,8 +44,9 @@ function Register() {
                 </label>
             </div>
 
-
-<p>*Our terms of use and privacy policies apply to all visitors who access our website.  By submitting your registration, you are in agreement with these terms.</p>
+<div className='policy'><p>*Our terms of use and privacy policies apply to all visitors who access our website.</p>
+<p>By submitting your registration, you are in agreement with these terms.</p>
+</div>
 
             <div className='form-grid'>
                 <button type="submit" id='button'>Submit</button>

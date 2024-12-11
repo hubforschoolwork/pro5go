@@ -7,13 +7,15 @@
     color: black;
 }
 
-
 .form-grid {
     display: grid;
     grid-template-columns: 200px auto;
     gap: 15px;
-    align-items: center;
+    align-items: left;
     text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
 }
 
 
@@ -42,10 +44,11 @@ input {
     width:15vw;
     height:30px;
     text-align: center;
-    margin-bottom: 25%;
-    padding-top: 25%;
+    margin-bottom: 5%;
+    padding-top: 5%;
     align-items: center;
     outline: auto;
+    justify-content: center;
 }
 
 @media (max-width: 600px) {
@@ -56,4 +59,9 @@ input {
     label {
         width: auto;
     }
+}
+
+.policy {
+    text-align: left;
+    word-wrap: normal;
 }
