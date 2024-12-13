@@ -201,7 +201,7 @@ function Loginform() {
 
         try {
             // Send login request to backend
-            const response = await axios.post("http://localhost:5000/api/login", formData);
+            const response = await axios.post("http://localhost:3000/api/login", formData);
             alert(response.data.message);
             
             // Simulate token storage (replace with actual token handling for production)
@@ -211,6 +211,8 @@ function Loginform() {
             window.location.href = "/dashboard";
         } catch (error) {
             // Display error from server or a generic message
+
+            console.error("Error:", error.response || error.message);
             alert(error.response?.data?.error || "An error occurred. Please try again.");
         }
     };
