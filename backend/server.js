@@ -87,12 +87,18 @@
 import express from "express";
 import bodyParser from "body-parser";
 import { getUsers, saveUsers } from "./users.js";
+import cors from "cors";
+
+
 
 const app = express();
-app.use(bodyParser.json());
+app.use(cors());
+app.use(express.json());
+
 
 // Endpoint to get all users
 app.get("/api/users", (req, res) => {
+  res.send("Server is running!");
   try {
     const users = getUsers(); // Use the getUsers function
     res.json(users);
@@ -135,8 +141,10 @@ app.post("/api/register", (req, res) => {
 app.post("/api/login", (req, res) => {
   try {
     const { username, password } = req.body;
+    console.log("Request body:", req.body); // Log the body for debugging
 
     if (!username || !password) {
+      console.error("Missing username or password");
       return res.status(400).json({ error: "Username and password are required." });
     }
 
@@ -144,6 +152,7 @@ app.post("/api/login", (req, res) => {
     const user = users.find((u) => u.username === username && u.password === password);
 
     if (!user) {
+      console.error("Invalid credentials");
       return res.status(401).json({ error: "Invalid username or password." });
     }
 
@@ -154,6 +163,7 @@ app.post("/api/login", (req, res) => {
     res.status(500).json({ error: "An error occurred during login." });
   }
 });
+
 
 // Endpoint to access the dashboard (protected route)
 app.get("/api/dashboard", (req, res) => {
