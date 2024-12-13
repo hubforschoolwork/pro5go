@@ -1,12 +1,12 @@
 import React from 'react';
 // import Dashboardmain from '../components/dashboardmain.jsx';
-import Dashboard from '..components/dashboardtest.jsx';
-import './dashboard.css';
+import Dashboard from '../components/dashboardtest.jsx';
+// import './dashboard.css';
 
-const Dashboard = () => {
+const Dashboard1 = () => {
     return (
         <>
-        {/* <Dashboardmain /> */}
+
         <Dashboard />
         <div className="d-flex">
         </div>
@@ -15,4 +15,7 @@ const Dashboard = () => {
     );
 };
 
-export default Dashboard;
+export default Dashboard1;
+
+
+/* <Dashboardmain /> */
