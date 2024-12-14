@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+
 function Loginform() {
     const [formData, setFormData] = useState({ username: "", password: "" });
 
@@ -10,20 +11,23 @@ function Loginform() {
         setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
 
+
     // Handle form submission
     const handleSubmit = async (event) => {
         event.preventDefault();
+        console.log("Form submitted", formData); // Debugging log
 
         try {
             // Send login request to backend
             const response = await axios.post("http://localhost:3000/api/login", formData);
+            console.log("Response received:", response.data);
             alert(response.data.message);
             
             // Simulate token storage (replace with actual token handling for production)
             localStorage.setItem("authToken", "valid-token");
+            window.location.href = "/dashboard"; 
 
-            // Redirect to dashboard
-            window.location.href = "/dashboard";
+
         } catch (error) {
             // Display error from server or a generic message
 

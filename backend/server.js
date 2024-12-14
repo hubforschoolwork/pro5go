@@ -1,12 +1,15 @@
 import express from "express";
 import { getUsers, saveUsers } from "./users.js";
 import cors from "cors";
+import bodyParser from "body-parser";
 
 
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(bodyParser.json);
+
 
 
 // Endpoint to get all users
@@ -54,22 +57,14 @@ app.post("/api/register", (req, res) => {
 app.post("/api/login", (req, res) => {
   try {
     const { username, password } = req.body;
-    console.log("Request body:", req.body); // Log the body for debugging
-
-    if (!username || !password) {
-      console.error("Missing username or password");
-      return res.status(400).json({ error: "Username and password are required." });
-    }
-
     const users = getUsers(); // Get users from the JSON file
+
     const user = users.find((u) => u.username === username && u.password === password);
 
     if (!user) {
-      console.error("Invalid credentials");
       return res.status(401).json({ error: "Invalid username or password." });
     }
 
-    // Simulating a session by returning the user details (token-based approach is recommended for production)
     res.json({ message: "Login successful!", user });
   } catch (error) {
     console.error("Error during login:", error.message);
