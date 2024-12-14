@@ -19,7 +19,15 @@ function Loginform() {
 
         try {
             // Send login request to backend
-            const response = await axios.post("http://localhost:3000/api/login", formData);
+            // const response = await axios.post("http://localhost:3000/api/login", formData);
+
+// *********************************************************************************************
+
+            const response = await axios.post("/api/login", formData);
+
+
+
+
             console.log("Response received:", response.data);
             alert(response.data.message);
             
