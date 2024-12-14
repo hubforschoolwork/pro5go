@@ -1,3 +1,82 @@
+import express from "express";
+import bodyParser from "body-parser";
+import fs from "fs";
+import cors from "cors";
+
+const app = express();
+const filePath = "./users.json"; // Path to your users.json file
+
+app.use(cors());
+
+   // Allow CORS for all origins (can be restricted in production)
+
+   app.use(cors({
+    origin: 'http://localhost:5173', // Allow only this origin
+    methods: ['GET', 'POST'], // Specify allowed methods
+    allowedHeaders: ['Content-Type'], // Specify allowed headers
+}));
+
+app.use(bodyParser.json());
+
+// Helper functions
+const getUsers = () => {
+    if (!fs.existsSync(filePath)) {
+        fs.writeFileSync(filePath, JSON.stringify([], null, 2)); // Create an empty file if it doesn't exist
+    }
+    return JSON.parse(fs.readFileSync(filePath));
+};
+
+const saveUsers = (users) => fs.writeFileSync(filePath, JSON.stringify(users, null, 2));
+
+// Login endpoint
+app.post("/api/login", (req, res) => {
+    console.log("Login request received:", req.body); // Log the request body
+    const { username, password } = req.body;
+
+    if (!username || !password) {
+        console.error("Username and/or password were not provided."); // Log if credentials are missing
+        return res.status(400).json({ error: "Username and password are required." });
+    }
+
+    const users = getUsers();
+    const user = users.find((u) => u.username === username && u.password === password);
+
+    if (!user) {
+        console.error("Invalid login attempt for username:", username); // Log failed login attempt
+        return res.status(401).json({ error: "Invalid username or password." });
+    }
+
+    res.json({ message: "Login successful", user });
+});
+
+// Register endpoint
+app.post("/api/register", (req, res) => {
+    const { username, password } = req.body;
+
+    if (!username || !password) {
+        return res.status(400).json({ error: "Username and password are required." });
+    }
+
+    const users = getUsers();
+    const existingUser = users.find((u) => u.username === username);
+
+    if (existingUser) {
+        return res.status(409).json({ error: "Username already exists." });
+    }
+
+    const newUser = { username, password };
+    users.push(newUser);
+    saveUsers(users);
+
+    res.status(201).json({ message: "User registered successfully", user: newUser });
+});
+
+// Start the server
+app.listen(3000, () => console.log("Server running on http://localhost:3000"));
+
+
+
+// *******************************************************************************************
 // import express from "express";
 // import { getUsers, saveUsers } from "./users.js";
 // import cors from "cors";
@@ -93,43 +172,49 @@
 // app.listen(3000, () => console.log("Server running on http://localhost:3000"));
 // ********************************************************************************
 
-import express from "express";
-import bodyParser from "body-parser";
-import fs from "fs";
-import cors from "cors";
 
-const app = express();
-const filePath = "./users.json"; // Path to your users.json file
 
-app.use(cors());
-app.use(bodyParser.json());
+// Dec 12, 2024
 
-// Helper functions
-const getUsers = () => JSON.parse(fs.readFileSync(filePath));
-const saveUsers = (users) => fs.writeFileSync(filePath, JSON.stringify(users, null, 2));
 
-// Login endpoint
-app.post("/api/login", (req, res) => {
-    try {
-        const { username, password } = req.body;
 
-        if (!username || !password) {
-            return res.status(400).json({ error: "Username and password are required." });
-        }
+// import express from "express";
+// import bodyParser from "body-parser";
+// import fs from "fs";
+// import cors from "cors";
 
-        const users = getUsers();
-        const user = users.find((u) => u.username === username && u.password === password);
+// const app = express();
+// const filePath = "./users.json"; // Path to your users.json file
 
-        if (!user) {
-            return res.status(401).json({ error: "Invalid username or password." });
-        }
+// app.use(cors());
+// app.use(bodyParser.json());
 
-        res.json({ message: "Login successful", user });
-    } catch (error) {
-        console.error("Error in /api/login:", error.message);
-        res.status(500).json({ error: "Server error. Please try again later." });
-    }
-});
+// // Helper functions
+// const getUsers = () => JSON.parse(fs.readFileSync(filePath));
+// const saveUsers = (users) => fs.writeFileSync(filePath, JSON.stringify(users, null, 2));
 
-// Start the server
-app.listen(3000, () => console.log("Server running on http://localhost:3000"));
+// // Login endpoint
+// app.post("/api/login", (req, res) => {
+//     try {
+//         const { username, password } = req.body;
+
+//         if (!username || !password) {
+//             return res.status(400).json({ error: "Username and password are required." });
+//         }
+
+//         const users = getUsers();
+//         const user = users.find((u) => u.username === username && u.password === password);
+
+//         if (!user) {
+//             return res.status(401).json({ error: "Invalid username or password." });
+//         }
+
+//         res.json({ message: "Login successful", user });
+//     } catch (error) {
+//         console.error("Error in /api/login:", error.message);
+//         res.status(500).json({ error: "Server error. Please try again later." });
+//     }
+// });
+
+// // Start the server
+// app.listen(3000, () => console.log("Server running on http://localhost:3000"));

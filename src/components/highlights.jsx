@@ -13,7 +13,7 @@ const Highlights = () => {
                 </h5>
             
 
-            <div class="container-g">
+            <div className="container-g">
                 <ul className="nav flex-column">
 
                     <li>

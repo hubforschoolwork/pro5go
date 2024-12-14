@@ -4,12 +4,13 @@ import './guestarea.css'
 
 function Guest() {
     return (
-        // <div className="form-container">
+        <div className="form-container">
     
         <div>
         <h3>Hello Winter Fan!</h3>
             
             <Highlights />
+        </div>
         </div>
     );
 }
