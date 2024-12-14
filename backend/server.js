@@ -96,10 +96,12 @@
 import express from "express";
 import bodyParser from "body-parser";
 import fs from "fs";
+import cors from "cors";
 
 const app = express();
 const filePath = "./users.json"; // Path to your users.json file
 
+app.use(cors());
 app.use(bodyParser.json());
 
 // Helper functions
