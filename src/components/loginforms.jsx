@@ -28,8 +28,7 @@ function Loginform() {
             window.location.href = "/dashboard";
 
         } catch (error) {
-            // Display error from server or a generic message
-            console.error("Error:", error.response || error.message);
+            console.error("Error:", error.response?.data || error.message);
             setError(error.response?.data?.error || "An error occurred. Please try again.");
         }
     };

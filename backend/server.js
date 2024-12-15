@@ -30,8 +30,8 @@ const saveUsers = (users) => fs.writeFileSync(filePath, JSON.stringify(users, nu
 
 // Login endpoint
 app.post("/api/login", (req, res) => {
-    console.log("Login request received:", req.body); // Log the request body
     const { username, password } = req.body;
+    console.log("Login request received:", req.body); // Log the request body   
 
     if (!username || !password) {
         console.error("Username and/or password were not provided."); // Log if credentials are missing

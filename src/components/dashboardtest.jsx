@@ -8,7 +8,7 @@ function Dashboard() {
         const fetchDashboard = async () => {
             try {
                 const authToken = localStorage.getItem("authToken");
-                const response = await axios.get("http://localhost:3000/api/dashboard", {
+                const response = await axios.get("http://localhost:3000/api/dashboard1", {
                     headers: {
                         Authorization: `Bearer ${authToken}`,
                     },
