@@ -1,21 +1,21 @@
 import React from 'react';
-import Dashboardmain from '../components/dashboardmain.jsx';
-// import Dashboard from '../components/dashboardtest.jsx';
-// import './dashboard.css';
+import Dashboard1 from '../components/dashboardtest.jsx';
 import Sidebar from '../components/sidebar.jsx';
+import Dashboardmain from '../components/dashboardmain.jsx';
 
-const Dashboard1 = () => {
+const Dashboard = () => {
     return (
         <>
         <Sidebar />
-        <Dashboardmain />
+        <Dashboard1 />
         <div className="d-flex">
+            <Dashboardmain />
         </div>
     
         </>
     );
 };
 
-export default Dashboard1;
+export default Dashboard;
 
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-function Dashboard() {
+function Dashboard1() {
     const [message, setMessage] = useState("");
 
     useEffect(() => {
@@ -25,4 +25,4 @@ function Dashboard() {
     return <div>{message}</div>;
 }
 
-export default Dashboard;
+export default Dashboard1;
