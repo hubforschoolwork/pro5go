@@ -7,7 +7,7 @@ function Questionit() {
         <>
         <div className="form-container">
             <h2>Ask a Question</h2>
-            <h3>Get great ideas, tips and inspiration from our Winter Wonderland community.</h3>            
+            <h4>Get great ideas, tips and inspiration from our Winter Wonderland community.</h4>            
         </div>
    
         </>
@@ -15,3 +15,4 @@ function Questionit() {
 }
 
 export default Questionit;
+

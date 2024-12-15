@@ -5,8 +5,8 @@ function Answerit() {
     return (
         <>
         <div className="form-container">
-            <h2>Answer A Question</h2>
-            <h3>Help others find inspiration and helpful tips.</h3>            
+            <h2>Answer a Question</h2>
+            <h4>Help others find inspiration and helpful tips.</h4>            
         </div>
    
         </>
@@ -14,3 +14,4 @@ function Answerit() {
 }
 
 export default Answerit;
+
