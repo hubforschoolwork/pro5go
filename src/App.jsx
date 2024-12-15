@@ -13,6 +13,8 @@ import Giftshopping from './pages/giftshopping.jsx'
 import Indoor from '/src/pages/indoor.jsx';
 import Sports from '/src/pages/sports.jsx';
 import Outdoor from './pages/outdoor.jsx';
+import Answer from '/.pages/answer.jsx';
+
 
 function App() {
 
@@ -38,6 +40,7 @@ function App() {
           <Route path="/indoor" element={<Indoor/>} />
           <Route path="/sports" element={<Sports />} />
           <Route path="/outdoor" element={<Outdoor/>} />
+          <Route path="/answer" element={<Answer/>} />
 
         </Routes>
 </div>
