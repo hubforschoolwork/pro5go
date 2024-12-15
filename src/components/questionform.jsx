@@ -15,11 +15,11 @@ function Questionit() {
                     <textarea name="message" id='message' />
                 </label>
             </div>
-        {/* <div className='form-grid'>
-                <label>Enter Question Here:
-                    <textarea name="message" id='message' value={formData.message} onChange={handleChange} />
-                </label>
-            </div> */}
+
+        <div className='back-button'>
+            <button type="submit" id='button'>Back</button>
+        </div>
+
 
 
         </>

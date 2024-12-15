@@ -3,7 +3,19 @@
     border-color: black;
 
 }
+.back-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
 
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
 
 .messagetitle {
     font-weight: bold;
