@@ -10,7 +10,7 @@ function Questionit() {
             <h4>Get great ideas, tips and inspiration from our Winter Wonderland community.</h4>            
         </div>
 
-
+<div className='container'>
         <div className='form-grid'>
         <div class="d-flex justify-content-center">
                 <label>Enter Question Here:
@@ -25,7 +25,7 @@ function Questionit() {
             <button type="submit" id='button'>Back</button>
         </div>
         </div>
-
+</div>
 
 
         </>
