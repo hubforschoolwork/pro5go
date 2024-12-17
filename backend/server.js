@@ -44,7 +44,7 @@ app.get('/api/questions/:topicId', async (req, res) => {
 // Add more routes as needed...
 
 // Start the server
-const PORT = 5000; // Use any available port
+const PORT = 3000; // Use any available port
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
