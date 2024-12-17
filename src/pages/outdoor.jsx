@@ -3,6 +3,7 @@ import Outdoorgalore from '../components/outdoorfun.jsx';
 import Sidebar from '../components/sidebar.jsx';
 import './outdoor.css';
 import Questionbutton from '../components/questionbutton.jsx';
+import Questionit from '../components/questionform.jsx';
 
 function Outdoor() {
     return (
@@ -11,11 +12,12 @@ function Outdoor() {
         <Sidebar />
 
         <div className="form-container">
-        <Questionbutton />
+
         </div>
 
         <Outdoorgalore />
-
+        <Questionit />
+        <Questionbutton />
         </>
     );
 }
