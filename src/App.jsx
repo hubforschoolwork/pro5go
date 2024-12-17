@@ -15,7 +15,7 @@ import Sports from '/src/pages/sports.jsx';
 import Outdoor from './pages/outdoor.jsx';
 import Answer from './pages/answer.jsx';
 import Question from './pages/question.jsx';
-import Topics from './components/topics.jsx';
+import Topics from './components/topics';
 
 
 
