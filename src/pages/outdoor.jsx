@@ -5,6 +5,7 @@ import Sidebar from '../components/sidebar.jsx';
 import Questionbutton from '../components/questionbutton.jsx';
 import Questionit from '../components/questionform.jsx';
 import './outdoor.css';
+import Addit from '../components/addit.jsx';
 
 
 function Outdoor() {
@@ -20,6 +21,7 @@ function Outdoor() {
         <Outdoorgalore />
         <Questionit />
         <Questionbutton />
+        <Addit />
         </>
     );
 }
