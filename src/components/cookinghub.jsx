@@ -5,11 +5,11 @@ function Cookingb() {
     return (
         <>
         <div className="form-container">
-            <h3>Winter Cooking</h3>
+            <h2>Winter Cooking</h2>
         </div>
 
-        <div>
-                <h2>Here's a Cooking Adventure for Winter</h2>
+        <div className="form-container">
+                <h4>Here's a Cooking Adventure for Winter</h4>
                 <h4>You'll find recipes, tips, and inspiration for your favorite outdoor activities.</h4>
             </div>
         </>

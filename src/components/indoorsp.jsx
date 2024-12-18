@@ -5,11 +5,12 @@ function Indoorgalore() {
     return (
         <>
         <div className="form-container">
-            <h3>Indoor Fun</h3>
+            <h2>Indoor Fun</h2>
         </div>
 
-        <div>
-                <h2>Fun things to do indoors!</h2>
+
+        <div className="form-container">
+                <h4>Fun things to do indoors!</h4>
                 <h4>Keep everyone busy with fun activities for all ages!</h4>
             </div>
         </>

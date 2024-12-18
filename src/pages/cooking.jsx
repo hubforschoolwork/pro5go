@@ -6,7 +6,6 @@ import './cooking.css'
 function Cooking() {
     return (
         <>
-        {/* <Dashboard /> */}
         <Sidebar />
 
         <div className="form-container">

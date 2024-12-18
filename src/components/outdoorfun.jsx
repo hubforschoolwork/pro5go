@@ -1,5 +1,5 @@
 import React from 'react';
-// import './cooking.css'
+
 
 function Outdoorgalore() {
     return (
@@ -8,7 +8,7 @@ function Outdoorgalore() {
             <h2>Outdoor Fun</h2>
         </div>
 
-        <div>
+        <div className="form-container">
                 <h4>Enjoy the fresh winter air with fun things to do outdoors!</h4>
             </div>
         </>

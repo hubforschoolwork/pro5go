@@ -6,7 +6,7 @@ function Questionit() {
     return (
         <>
         <div className="form-container">
-            <h2>Ask a Question</h2>
+            <h3>Ask a Question.....</h3>
             <h4>Get great ideas, tips and inspiration from our Winter Wonderland community.</h4>            
         </div>
 
