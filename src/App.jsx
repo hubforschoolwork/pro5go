@@ -16,7 +16,7 @@ import Outdoor from './pages/outdoor.jsx';
 import Answer from './pages/answer.jsx';
 import Question from './pages/question.jsx';
 import Topics from './components/topics';
-import Addit from './components/addit.jsx';
+// import Addit from './components/addit.jsx';
 
 
 
@@ -47,7 +47,7 @@ function App() {
           <Route path="/answer" element={<Answer/>} />
           <Route path="/question" element={<Question/>} />
           <Route path="/topics" element={<Topics />} />
-          <Route path="/addit" element={<Addit />} />
+          {/* <Route path="/addit" element={<Addit />} /> */}
 
 
         </Routes>
