@@ -2,10 +2,9 @@ import React from 'react';
 import Outdoorgalore from '../components/outdoorfun.jsx';
 import '../components/outdoorfun.css';
 import Sidebar from '../components/sidebar.jsx';
-import './outdoor.css';
 import Questionbutton from '../components/questionbutton.jsx';
 import Questionit from '../components/questionform.jsx';
-
+import './outdoor.css';
 
 
 function Outdoor() {
