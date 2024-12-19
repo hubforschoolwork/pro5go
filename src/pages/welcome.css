@@ -74,7 +74,7 @@ textarea {
     margin-bottom: 25%;
     padding-top: 25%;
     align-items: center;
-    outline: auto;
+    /* outline: auto; */
 }
 
 @media (max-width: 600px) {
