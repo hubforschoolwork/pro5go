@@ -64,4 +64,51 @@ export default TitleComponent;
     font-size: 2rem; /* Adjust the size as needed */
   }
   
+***************************************************************************
+12/18/2024
 
+import React from 'react';
+import './App.css'; // Make sure to import your CSS file
+import App from '../App'
+
+function WelcomePage() {
+  return (
+    <div className="background-container">
+      <img src="src/assets/overlay-image.png" className="overlay-image" alt="Overlay" />
+      <div className="content">
+        <h1>Welcome to Our Website</h1>
+        <p>This is the welcome page with a background image and an overlay image on the right-hand side.</p>
+      </div>
+    </div>
+  );
+}
+
+export default WelcomePage;
+
+
+************app.css*************
+
+.background-container {
+  position: relative;
+  background-image: url('src/assets/background-image.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100vh; /* Adjust as needed */
+}
+
+.overlay-image {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 200px; /* Adjust as needed */
+  height: auto;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white; /* Adjust text color as needed */
+  text-align: center;
+  padding: 20px;
+}

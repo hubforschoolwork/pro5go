@@ -86,3 +86,22 @@ textarea {
         width: auto;
     }
 }
+
+
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 200px;
+    height: auto;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    color: black;
+    text-align: center;
+    padding: 20px;
+  }
+  
