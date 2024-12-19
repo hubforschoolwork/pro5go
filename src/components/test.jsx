@@ -1,114 +1,151 @@
-index.html
+// *****************************FORM COMPONENT*********************************
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React App</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
-</html>
+import React, { useState } from 'react';
 
-*******or*****************
+function ForumForm({ onSubmit }) {
+  const [text, setText] = useState('');
 
-Method 2: Importing in CSS
-Open your main CSS file (e.g., App.css or styles.css).
+  const handleChange = (e) => {
+    setText(e.target.value);
+  };
 
-Add the @import statement at the top of the file.
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSubmit(text);
+    setText('');
+  };
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-____________________________________________________
-index.html
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React App</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
-</html>
-
-in App.css or style.css
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-
-APPLYING FONT TO A SPECIFIC TITLE
-
-// TitleComponent.js
-import React from 'react';
-import './styles.css';
-
-const TitleComponent = () => {
   return (
-    <h1 className="custom-title">My Custom Title</h1>
+    <form onSubmit={handleSubmit}>
+      <div className="form-group">
+        <textarea
+          className="form-control"
+          value={text}
+          onChange={handleChange}
+          placeholder="Ask or answer a question..."
+        />
+      </div>
+      <button type="submit" className="btn btn-primary">Submit</button>
+      <button type="button" className="btn btn-secondary" onClick={() => setText('')}>Back</button>
+    </form>
   );
-};
+}
 
-export default TitleComponent;
+export default ForumForm;
 
 
+// *******************************MAIN COMPONENT***********************************
 
-/* styles.css */
-.custom-title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem; /* Adjust the size as needed */
-  }
-  
-***************************************************************************
-12/18/2024
+import React, { useState } from 'react';
+import ForumForm from './ForumForm';
 
-import React from 'react';
-import './App.css'; // Make sure to import your CSS file
-import App from '../App'
+function Forum() {
+  const [posts, setPosts] = useState([]);
 
-function WelcomePage() {
+  const handleFormSubmit = (text) => {
+    setPosts([...posts, text]);
+  };
+
   return (
-    <div className="background-container">
-      <img src="src/assets/overlay-image.png" className="overlay-image" alt="Overlay" />
-      <div className="content">
-        <h1>Welcome to Our Website</h1>
-        <p>This is the welcome page with a background image and an overlay image on the right-hand side.</p>
+    <div className="container">
+      <h1>Forum</h1>
+      <ForumForm onSubmit={handleFormSubmit} />
+      <div className="mt-4">
+        {posts.map((post, index) => (
+          <div key={index} className="card mb-2">
+            <div className="card-body">
+              {post}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
 }
 
-export default WelcomePage;
+export default Forum;
 
 
-************app.css*************
 
-.background-container {
-  position: relative;
-  background-image: url('src/assets/background-image.jpg');
-  background-size: cover;
-  width: 100%;
-  height: 100vh; /* Adjust as needed */
+// ****************************************STYLING*************************
+// Add to App.jsx or index.js
+
+  import 'bootstrap/dist/css/bootstrap.min.css';
+
+// ************************INTEGRATE COMPONENTS****************************
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Forum from './Forum';
+
+ReactDOM.render(<Forum />, document.getElementById('root'));
+
+// ********************************************FORM FOR EACH PAGE (SEPARATE)***************
+//*************************************************************************************** */
+
+import React, { useState } from 'react';
+import ForumForm from './ForumForm';
+
+function TopicPage({ topic }) {
+  const [posts, setPosts] = useState([]);
+
+  const handleFormSubmit = (text) => {
+    setPosts([...posts, text]);
+  };
+
+  return (
+    <div className="container">
+      <h1>{topic}</h1>
+      <ForumForm onSubmit={handleFormSubmit} />
+      <div className="mt-4">
+        {posts.map((post, index) => (
+          <div key={index} className="card mb-2">
+            <div className="card-body">
+              {post}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
-.overlay-image {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  width: 200px; /* Adjust as needed */
-  height: auto;
+export default TopicPage;
+
+// **************************************INTEGRATE TOPICS******************************
+// Integrating Components: You can integrate the TopicPage component in your main application file. Here's an example of how you can set up routing to handle different topics:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import TopicPage from './TopicPage';
+
+function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route path="/topic1">
+          <TopicPage topic="Topic 1" />
+        </Route>
+        <Route path="/topic2">
+          <TopicPage topic="Topic 2" />
+        </Route>
+        {/* Add more routes for additional topics */}
+        <Route path="/">
+          <h1>Welcome to the Forum</h1>
+        </Route>
+      </Switch>
+    </Router>
+  );
 }
 
-.content {
-  position: relative;
-  z-index: 1;
-  color: white; /* Adjust text color as needed */
-  text-align: center;
-  padding: 20px;
-}
+ReactDOM.render(<App />, document.getElementById('root'));
+
+// *******************************FILE STRUCTURE**********************************
+/src
+  /components
+    ForumForm.js
+    TopicPage.js
+  App.js
+  index.js
+
