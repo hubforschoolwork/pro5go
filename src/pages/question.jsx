@@ -4,7 +4,6 @@ import Dashboard from '../components/dashboardtest.jsx';
 import Sidebar from '../components/sidebar.jsx';
 import './question.css'
 import Questionbutton from '../components/questionbutton.jsx';
-import Questionbox from '../components/questionmodal.jsx';
 
 function Question() {
     return (
@@ -18,7 +17,7 @@ function Question() {
 
         <Questionit />
         <Questionbutton />
-        <Questionbox />
+
 
         </>
     );

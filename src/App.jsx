@@ -51,8 +51,6 @@ function App() {
           <Route path="/topics" element={<Topics />} />
           <Route path="/addit" element={<Addit />} />
           <Route path="/attitude" element={<Attitude />} />
-          <Route path="/questionbox" element={<Questionbox />} />
-
 
         </Routes>
 </div>
