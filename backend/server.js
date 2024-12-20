@@ -17,7 +17,6 @@ app.use(cors());
     allowedHeaders: ['Content-Type'], // Specify allowed headers
 }));
 
-// *********************December 16, 2024************************************
 // Fetch all topics
 app.get('/api/topics', async (req, res) => {
     try {
@@ -48,9 +47,6 @@ const PORT = 3000; // Use any available port
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
-
-
-// *******************************************************************************
 
 
 app.use(bodyParser.json());
