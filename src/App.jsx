@@ -17,9 +17,8 @@ import Answer from './pages/answer.jsx';
 import Question from './pages/question.jsx';
 import Topics from './components/topics';
 import Addit from './components/addit.jsx';
-import Attitude from './components/attitude.jsx'
-import Questionbox from './components/questionmodal.jsx';
-
+import Attitude from './components/attitude.jsx';
+import ForumForm from './components/forumform.jsx';
 
 
 function App() {
@@ -51,6 +50,8 @@ function App() {
           <Route path="/topics" element={<Topics />} />
           <Route path="/addit" element={<Addit />} />
           <Route path="/attitude" element={<Attitude />} />
+          <Route path="/forum" element={<ForumForm />} />
+          
 
         </Routes>
 </div>
