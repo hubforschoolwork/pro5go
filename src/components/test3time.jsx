@@ -1,36 +1,7 @@
-// import React, { useState } from 'react';
-// import ForumForm from './forumform';
-
-// function TopicPage({ topic }) {
-//   const [posts, setPosts] = useState([]);
-
-//   const handleFormSubmit = (text) => {
-//     setPosts([...posts, text]);
-//   };
-
-//   return (
-//     <div className="container">
-//       <h1>{topic}</h1>
-//       <ForumForm onSubmit={handleFormSubmit} />
-//       <div className="mt-4">
-//         {posts.map((post, index) => (
-//           <div key={index} className="card mb-2">
-//             <div className="card-body">
-//               {post}
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default TopicPage;
-
-
+//Add the timestamp code to the TopicPage
 
 import React, { useState } from 'react';
-import ForumForm from './forumform';
+import ForumForm from './Forumorm';
 
 function TopicPage({ topic }) {
   const [posts, setPosts] = useState([]);
@@ -63,3 +34,9 @@ function TopicPage({ topic }) {
 
 export default TopicPage;
 
+//Explanation
+// ForumForm Component: No changes are needed here. It remains the same and handles the form submission.
+
+// TopicPage Component: When a new post is submitted, a timestamp is captured using new Date().toLocaleString(). This timestamp is stored along with the post text in the posts state.
+
+// Displaying the Timestamp: The timestamp is displayed below each post using a <small> tag with the class text-muted for styling.

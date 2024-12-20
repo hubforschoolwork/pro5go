@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './forumform.css';
 
 function ForumForm({ onSubmit }) {
   const [text, setText] = useState('');
@@ -23,9 +24,9 @@ function ForumForm({ onSubmit }) {
           placeholder="Ask or answer a question..."
         />
       </div>
-      
-      <button type="submit" className="btn btn-primary">Submit</button>
-      <button type="button" className="btn btn-secondary" onClick={() => setText('')}>Back</button>
+
+      <button type="submit" className="btn btn-primary btn-lg">Submit</button>
+      <button type="button" className="btn btn-secondary btn-lg button-spacing" onClick={() => setText('')}>Back</button>
     </form>
   );
 }
