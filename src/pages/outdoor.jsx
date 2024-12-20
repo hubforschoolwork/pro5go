@@ -7,7 +7,6 @@ import Questionit from '../components/questionform.jsx';
 import './outdoor.css';
 // import Addit from '../components/addit.jsx';
 import Attitude from '../components/attitude.jsx';
-import ForumForm from '../components/forumform.jsx';
 import TopicPage from '../components/outdoortop.jsx';
 
 
@@ -20,13 +19,14 @@ function Outdoor() {
         <div className="form-container">
 
         </div>
-        <ForumForm />
-        <TopicPage />
+        {/* <ForumForm /> */}
+
         <Outdoorgalore />
         <Questionit />
+        <TopicPage />        
         <Questionbutton />
-        {/* <Addit /> */}
         <Attitude />
+
         </>
     );
 }
