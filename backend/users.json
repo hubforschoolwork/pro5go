@@ -1,5 +1,9 @@
  [
     {
+      "username": "john",
+      "password": "1234"
+    },
+    {
       "username": "alice",
       "password": "test"
     },
@@ -8,17 +12,9 @@
       "password": "1234"
     },
     {
-      "username": "sam",
-      "password": "abcd"
-    },
-    {
       "username": "mary",
       "password": "xyz"
-    },
-    {
-      "username": "james",
-      "password": "121212"
     }
-]
+  ]
 
   
