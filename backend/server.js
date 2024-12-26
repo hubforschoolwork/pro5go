@@ -1,7 +1,8 @@
-import express from "express";
-import bodyParser from "body-parser";
-import fs from "fs";
-import cors from "cors";
+import express from 'express';
+import bodyParser from 'body-parser';
+import fs from 'fs';
+import cors from 'cors';
+import db from './db.js';
 import pool from './db.js';
 
 const app = express();
