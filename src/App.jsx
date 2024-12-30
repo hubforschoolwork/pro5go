@@ -9,7 +9,7 @@ import Guest from './pages/guestarea.jsx';
 import Testlink from './pages/testlink.jsx';
 import Cooking from '/src/pages/cooking.jsx';
 import Dashboard from './pages/dashboard.jsx';
-import Giftshopping from './pages/giftshopping.jsx'
+import Giftshopping from './pages/giftshopping.jsx';
 import Indoor from '/src/pages/indoor.jsx';
 import Sports from '/src/pages/sports.jsx';
 import Outdoor from './pages/outdoor.jsx';

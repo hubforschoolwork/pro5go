@@ -34,6 +34,7 @@ function Loginform() {
     };
 
     return (
+        <>
         <form onSubmit={handleSubmit}>
             {error && <div className="error-message">{error}</div>}
 
@@ -71,6 +72,7 @@ function Loginform() {
                 </button>
             </div>
         </form>
+        </>
     );
 }
 
