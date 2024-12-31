@@ -64,6 +64,7 @@ app.post("/api/register", async (req, res) => {
   }
 });
 
+
 // Start the server*************
 const PORT = 3000; // Use any available port
 app.listen(PORT, () => {
