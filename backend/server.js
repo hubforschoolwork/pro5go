@@ -1,10 +1,12 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import db from './db.js'; // Ensure this is your MongoDB connection file
+import connectDB from './db.js'; // Ensure this is your MongoDB connection file
 import User from './models/User.js'; // Import the User model
 
 const app = express();
+
+connectDB();
 
 app.use(cors({
   origin: 'http://localhost:5173', // Allow only this origin
@@ -14,7 +16,7 @@ app.use(cors({
 
 app.use(bodyParser.json());
 
-// Login endpoint
+// Login endpoint************
 app.post("/api/login", async (req, res) => {
   const { username, password } = req.body;
   console.log("Login request received:", req.body); // Log the request body   
@@ -38,7 +40,7 @@ app.post("/api/login", async (req, res) => {
   }
 });
 
-// Register endpoint
+// Register endpoint***************
 app.post("/api/register", async (req, res) => {
   const { username, password } = req.body;
 
@@ -62,7 +64,7 @@ app.post("/api/register", async (req, res) => {
   }
 });
 
-// Start the server
+// Start the server*************
 const PORT = 3000; // Use any available port
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
