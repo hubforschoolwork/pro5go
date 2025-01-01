@@ -2,7 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import connectDB from './db.js'; // Ensure this is your MongoDB connection file
-import User from './models/User.js'; // Import the User model
+import User from './models/User.js' // Import the User model
 
 const app = express();
 
@@ -27,8 +27,8 @@ app.post("/api/login", async (req, res) => {
   }
 
   try {
-    const user = await User.findOne({ username, password });
-    if (!user) {
+    const User = await User.findOne({ username, password });
+    if (!User) {
       console.error("Invalid login attempt for username:", username); // Log failed login attempt
       return res.status(401).json({ error: "Invalid username or password." });
     }
