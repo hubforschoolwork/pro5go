@@ -4,6 +4,13 @@ import { Link } from 'react-router-dom';
 
 
 const Sidebar = () => {
+
+    const handleLogout = () => {
+        localStorage.removeItem("authToken");
+        window.location.href = "/login";
+    };
+
+
     return (
         // <div className="sidebar d-flex flex-column bg-primary bg-opacity-50 text-white vh-100">
 
@@ -26,6 +33,9 @@ const Sidebar = () => {
                 <li className="nav-item">
                     <Link to="/sports" className="nav-link text-white">Sports</Link>
                 </li>
+
+                <li><button onClick={handleLogout}>Logout</button></li>
+
             </ul>
         </div>
     );
