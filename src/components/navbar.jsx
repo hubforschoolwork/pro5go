@@ -2,6 +2,12 @@ import React from 'react';
 
 
 const Navbar = () => {
+
+    const handleLogout = () => {
+        localStorage.removeItem("authToken");
+        window.location.href = "/login";
+    };
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top"> {/* Apply the fixed-top class here */}
             {/* <div className="container"> */}
@@ -43,7 +49,8 @@ const Navbar = () => {
 
 
             </div>
-        </nav>
+
+         </nav>
     );
 }
 
