@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { AuthProvider } from './js/AuthContext.jsx';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import MyNavbar from './components/navbar';
+import MyNavbar from './components/navbar.jsx';
 import './App.css';
 import Login from './pages/login.jsx';
 import Registeruser from './pages/register.jsx';
@@ -21,27 +22,21 @@ import Attitude from './components/attitude.jsx';
 import ForumForm from './components/forumform.jsx';
 
 function App() {
-  const [user, setUser] = useState("");
 
-  useEffect(() => {
-    const username = localStorage.getItem("username");
-    if (username) {
-      setUser(username);
-    }
-  }, []);
-
-  return (
+   return (
     <Router>
+
+    <AuthProvider>
       <div className="App">
         <MyNavbar />
         <Routes>
           <Route path="/" element={<Welcome />} />
-          <Route path="/login" element={<Login setUser={setUser} />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Registeruser />} />
           <Route path="/guestarea" element={<Guest />} />
           <Route path="/testlink" element={<Testlink />} />
           <Route path="/cooking" element={<Cooking />} />
-          <Route path="/dashboard" element={<Dashboard user={user} />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/giftshopping" element={<Giftshopping />} />
           <Route path="/indoor" element={<Indoor />} />
           <Route path="/sports" element={<Sports />} />
@@ -54,7 +49,8 @@ function App() {
           <Route path="/forum" element={<ForumForm />} />
         </Routes>
       </div>
-    </Router>
+  </AuthProvider>
+  </Router>
   );
 }
 
