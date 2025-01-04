@@ -77,6 +77,11 @@ function Login() {
                         Submit
                     </button>
                 </div>
+
+                <div className='policy'>
+                    <p>*Usernames and passwords are case sensitive.</p>
+                </div>
+                
             </form>
         </>
     );

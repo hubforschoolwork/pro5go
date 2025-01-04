@@ -71,6 +71,11 @@ function Register() {
                     <button type="submit" id='button'>Submit</button>
                     {submissionStatus && <p>{submissionStatus}</p>}
                 </div>
+
+                <div className='policy'>
+                    <p>* Usernames and passwords are case sensitive.</p>
+                </div>
+
             </form>
         </>
     );

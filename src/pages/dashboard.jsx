@@ -15,7 +15,7 @@ const Dashboard = () => {
                 <Dashboardmain />
             </div>
             <div>
-                {user ? <h1>Welcome, {user}</h1> : <h1>Please log in</h1>} {/* Accessing user directly */}
+                {user ? <h1>Welcome {user}</h1> : <h1>Please log in</h1>} {/* Accessing user directly */}
             </div>
         </>
     );
