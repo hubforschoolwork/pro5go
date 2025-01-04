@@ -20,7 +20,7 @@ function TopicPage({ topic }) {
         {posts.map((post, index) => (
           <div key={index} className="card mb-2">
             <div className="card-body">
-              <p>{post.text}</p>
+              <p>{post.text}?</p>
               <small className="text-muted">Submitted on: {post.timestamp}</small>
             </div>
           </div>
