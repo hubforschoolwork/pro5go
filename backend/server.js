@@ -42,33 +42,6 @@ app.post("/api/login", async (req, res) => {
 });
 
 
-// STOP********************************************************************
-
-
-// Login endpoint************
-// app.post("/api/login", async (req, res) => {
-//   const { username, password } = req.body;
-//   console.log("Login request received:", req.body); // Log the request body   
-
-//   if (!username || !password) {
-//     console.error("Username and/or password were not provided."); // Log if credentials are missing
-//     return res.status(400).json({ error: "Username and password are required." });
-//   }
-
-//   try {
-//     const User = await User.findOne({ username, password });
-//     if (!User) {
-//       console.error("Invalid login attempt for username:", username); // Log failed login attempt
-//       return res.status(401).json({ error: "Invalid username or password." });
-//     }
-
-//     res.json({ message: "Login successful", user });
-//   } catch (error) {
-//     console.error("Error during login:", error);
-//     res.status(500).json({ error: "Server error" });
-//   }
-// });
-
 // Register endpoint***************
 app.post("/api/register", async (req, res) => {
   const { username, password } = req.body;
