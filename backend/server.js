@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import connectDB from './db.js'; // Ensure this is your MongoDB connection file
 import User from './models/User.js'; // Import the User model
+import questionRoutes from './routes/questions.js';
 
 const app = express();
 
@@ -13,6 +14,8 @@ app.use(cors({
 }));
 
 app.use(bodyParser.json());
+app.use('/questions', questionRoutes);
+
 
 connectDB();
 
