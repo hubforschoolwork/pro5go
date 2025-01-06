@@ -13,6 +13,7 @@ const questionSchema = new Schema({
   content: { type: String, required: true },
   author: { type: String, required: true },
   date: { type: Date, default: Date.now },
+  topic: { type: String, required: true }, // Add topic field
   answers: [answerSchema],
 
 });
