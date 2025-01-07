@@ -21,7 +21,7 @@
 }
 
   
-.form-container {
+/* .form-container {
     display: flex;
     justify-content: right;
     flex-direction: column;
@@ -44,7 +44,7 @@
     grid-template-columns: 150px auto;
     gap: 50px;
     align-items: center;
-}
+} */
 
 label {
     text-align: left;
