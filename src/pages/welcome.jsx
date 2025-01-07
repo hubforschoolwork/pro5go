@@ -27,8 +27,8 @@ function Welcome() {
       <div className="background-container">
         <img src="src/assets/santa-claus-1819933_1280.jpg" className="overlay-image" alt="Overlay" />
         <div className="content">
-          <h1>Welcome to Our Website</h1>
-          <p>This is the welcome page with a background image and an overlay image on the right-hand side.</p>
+          <h1>Welcome to Winter Wonderland</h1>
+          <p>If you like discovering all things winter, then this is the place for you!</p>
         </div>
       </div>
 
