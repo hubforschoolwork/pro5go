@@ -32,3 +32,9 @@ function ForumForm({ onSubmit }) {
 }
 
 export default ForumForm;
+
+
+
+
+
+
