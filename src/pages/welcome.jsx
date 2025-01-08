@@ -23,7 +23,15 @@ import Welcomebutton from '../components/welcomebutton.jsx';
 function Welcome() {
   return (
     <>
-      <div className="container text-center">
+    <div className='container-title'>
+      <div className="row">
+        <div className="col">
+          <h1>Winter Wonderland</h1>
+        </div>
+      </div>
+    </div>
+    
+      <div className="container text-center" id='santaset'>
         <div className="row">
           <div className="col">
             <img src="src/assets/santa-claus-1819933_1280.jpg" alt="Santa Claus" className="img-fluid" style={{ height: '300px', width: '700px' }}/>
@@ -36,7 +44,7 @@ function Welcome() {
           </div>
         </div>
       </div>
-    <div>
+    <div className="container" id="welcomelink">
       <Welcomebutton />
       </div>
     </>
