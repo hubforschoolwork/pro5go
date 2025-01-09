@@ -24,6 +24,15 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Box shadow effect for text */    
   }
  
+  .middle-column {
+    padding-top: 60px; /* Adjust the value as needed */
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+
    /* In your CSS file */
 /* .custom-img-outline {
     outline: 5px solid #f86969;
