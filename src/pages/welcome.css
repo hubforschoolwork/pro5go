@@ -9,16 +9,17 @@
     padding: 20px;
     background-color: #f8f9fa;
     border: 5px solid rgb(247, 128, 128);
-    border-radius: 20px;
     text-align: center;
     margin-bottom: 70px;
     margin-top: 10px;
-    border-radius: 45%;
+    border-radius: 4%;
+    height: 6rem;
+    width: 75rem;
   }
-  
+
    .container-title h1 {
     margin: 0;
-    font-size: 5rem; /* Adjust the font size as needed */
+    font-size: 3rem; /* Adjust the font size as needed */
     color: #343a40; /* Dark gray text color */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Box shadow effect for text */    
   }
