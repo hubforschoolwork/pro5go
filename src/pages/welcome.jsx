@@ -20,7 +20,8 @@ function Welcome() {
             <img src="src/assets/santa-claus-1819933_1280.jpg" alt="Santa Claus" className="img-fluid custom-img-outline" style={{ height: '300px', width: '700px' }}/>
           </div>
           <div className="col-4 middle-column">
-            <h5>If you like discovering all things winter, then come and experience the magic of the season!</h5>
+            <h3>Discover the fun!</h3>
+            <h3>Enjoy the season!</h3>
           </div>
           <div className="col">
             <img src="src/assets/cocoa-1908020_1280.jpg" alt="Cocoa" className="img-fluid custom-img-outline" style={{ height: '300px', width: '700px' }}/>

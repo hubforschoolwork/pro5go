@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useAuth } from '../js/AuthContext'; // Without .jsx
 import { useNavigate } from 'react-router-dom';
+import './loginforms.css';
 
 function Login() {
     const { login } = useAuth(); // Accessing login function from AuthContext
@@ -73,9 +74,7 @@ function Login() {
                 </div>
 
                 <div className="form-grid">
-                    <button type="submit" id="button">
-                        Submit
-                    </button>
+                    <button type="submit" className="button">Submit</button>
                 </div>
 
                 <div className='policy'>
