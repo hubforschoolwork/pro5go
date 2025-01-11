@@ -42,6 +42,7 @@ function Login() {
 
     return (
         <>
+        <div className="container">
             <form onSubmit={handleSubmit}>
                 {error && <div className="error-message">{error}</div>}
 
@@ -73,10 +74,15 @@ function Login() {
                     </label>
                 </div>
 
-                <div className='container'>
+                {/* <div className='container'>
                     <div className="col-md-6 offset-md-3">
                     <button type="submit" className="button1">Submit</button>
                     </div>
+                </div> */}
+
+
+                <div className='form-grid'>
+                    <button type="submit" id='button1'>Submit</button>
                 </div>
 
                 <div className='policy'>
@@ -84,6 +90,7 @@ function Login() {
                 </div>
                 
             </form>
+            </div>
         </>
     );
 }
