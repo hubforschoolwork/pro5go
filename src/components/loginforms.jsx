@@ -73,8 +73,10 @@ function Login() {
                     </label>
                 </div>
 
-                <div className="form-grid">
-                    <button type="submit" className="button">Submit</button>
+                <div className='container'>
+                    <div className="col-md-6 offset-md-3">
+                    <button type="submit" className="button1">Submit</button>
+                    </div>
                 </div>
 
                 <div className='policy'>

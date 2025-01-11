@@ -1,12 +1,13 @@
-.button {
+.button1 {
     margin-top: 0%;
     background-color: white;
     color: black;
     border-radius: 25px;
-    width: 20rem;
-    height: 20rem;
+    width: 6rem;
+    height: 2rem;
     text-align: center;
     margin-bottom: 0%;
+    margin-top: 10%;
     padding: 5%;
     align-items: center;
     font-size: 10px;
@@ -16,5 +17,7 @@
     box-shadow: 0 0 0 5px #f86969;
     color: #343a40;
     line-height: 20rem;
-
+    align-self: auto;
 }
+
+
