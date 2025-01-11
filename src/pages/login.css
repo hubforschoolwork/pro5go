@@ -35,7 +35,7 @@ input {
     width: 250px;
 }
 
-.button {
+/* .button {
     background-color: white;
     color:black;
     border-radius: 10px;
@@ -47,7 +47,7 @@ input {
     padding-top: 40%;
     align-items: center;
     outline: auto;
-}
+} */
 
 .error-message {
     color: red;

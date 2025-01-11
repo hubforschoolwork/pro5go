@@ -2,7 +2,7 @@ import React from 'react';
 import Loginform from '../components/loginforms.jsx';
 import './login.css'
 
-function Login() {
+function Logins() {
     return (
         <div className="form-container">
             <h3>Login</h3>
@@ -13,4 +13,5 @@ function Login() {
     );
 }
 
-export default Login;
+export default Logins;
+
