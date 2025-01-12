@@ -42,7 +42,7 @@ function Login() {
 
     return (
         <>
-        <div className="container text-center">
+        <div className="container text-center-main">
             <form onSubmit={handleSubmit}>
                 {error && <div className="error-message">{error}</div>}
 
@@ -89,7 +89,7 @@ function Login() {
                     </div>
                 </div> */}
 
-                <div className="container text-center">
+                <div className="container text-center-button1">
                 <div className="col">
                 {/* <div className='form-grid'> */}
                     <button type="submit" id='button1'>Submit</button>
@@ -97,7 +97,7 @@ function Login() {
                 </div>
                 {/* </div> */}
 
-                <div className="container text-center">
+                <div className="container text-center-policy">
                 <div className="col">
                 <div className='policy'>
                     <p>*Usernames and passwords are case sensitive.</p>

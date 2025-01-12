@@ -4,12 +4,21 @@ import './login.css'
 
 function Logins() {
     return (
-        <div className="form-container">
-            <h3>Login</h3>
-            
+        
+        <div className='container-title'>
+                  <div className="row">
+            <div className="col">
+                <h1>Login</h1>
+            </div>
+        </div>
+
+
+        <div className="form-container">            
             <Loginform />
             
         </div>
+        </div>
+
     );
 }
 
