@@ -5,6 +5,8 @@
     align-items: right;
     padding-top: 2rem;
     color: black;
+    width: 100%;
+    margin-top: 5rem;
 }
 .container-title {
     padding: 20px;
@@ -12,11 +14,13 @@
     border: 5px solid rgb(247, 128, 128);
     text-align: center;
     margin-bottom: 5px;
-    margin-top: 1px;
+    margin-top: 200px;
     border-radius: 4%;
     height: 6rem;
     width: 75rem;
   }
+
+
 
    .container-title h1 {
     margin: 0;
@@ -31,7 +35,7 @@
     gap: 20px;
     align-items: center;
     padding: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 0%;
     margin-top: 2%;
 }
 
@@ -45,25 +49,11 @@ input {
     width: 250px;
 }
 
-/* .button {
-    background-color: white;
-    color:black;
-    border-radius: 10px;
-    width:15vw;
-    height:30px;
-    text-align: center;
-    margin-bottom: 50%;
-    margin-top: 50%;
-    padding-top: 40%;
-    align-items: center;
-    outline: auto;
-} */
-
 .error-message {
     color: red;
     margin-top: 10px;
 }
-
+/* 
 @media (max-width: 600px) {
     .form-group, .form-grid {
         flex-direction: column;
@@ -72,4 +62,4 @@ input {
     label {
         width: auto;
     }
-}
+} */
