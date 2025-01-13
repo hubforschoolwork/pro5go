@@ -43,6 +43,7 @@ function Register() {
 
     return (
         <>
+        <div className="container text-center-main">
             <form onSubmit={handleSubmit}>
                 <div className='form-grid'>
                     <label>Username:
@@ -74,6 +75,7 @@ function Register() {
                 </div>
 
             </form>
+        </div>
         </>
     );
 }
