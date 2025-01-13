@@ -5,16 +5,11 @@ import './login.css'
 function Logins() {
     return (
     <>
-      
-{/* <div className='form-container'> */}
-  <div className='container-title'>
-    {/* {/* <div className="row"> */}
-      <div className="col">
+<div className='container'>    
+  <div className='container-title h1'>
         <h1>Login</h1>
       </div>
-    </div>
-  {/* </div>    
-</div> */}
+      </div>
 
 <Loginform />          
 

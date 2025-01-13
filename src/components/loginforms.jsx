@@ -78,7 +78,7 @@ function Login() {
                 </div>
 
 
-                <div className='form-grid'>
+                <div className="form-grid">
                     <button type="submit">Submit</button>
                 </div>
 

@@ -33,6 +33,18 @@
     font-size: 30px;
     color: #343a40; /* Dark gray text color */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Box shadow effect for text */
-    margin-top: 0%;
+    margin-top: 5%;
     margin-bottom: 5%;
+}
+
+
+.form-grid input[type="password"] {
+    margin-bottom: 40px; /* Adjust the value as needed */
+}
+
+
+.form-grid button[type="submit"] {
+    margin-bottom: 40px;
+    
+
 }
