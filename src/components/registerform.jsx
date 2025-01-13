@@ -62,18 +62,15 @@ function Register() {
                     </label>
                 </div>
 
-                <div className='policy'>
-                    <p>*Our terms of use and privacy policies apply to all visitors who access our website.</p>
-                    <p>By submitting your registration, you are in agreement with these terms.</p>
-                </div>
-
                 <div className='form-grid'>
                     <button type="submit" id='button'>Submit</button>
                     {submissionStatus && <p>{submissionStatus}</p>}
                 </div>
 
-                <div className='policy'>
+                <div className='container-policy'>
                     <p>* Usernames and passwords are case sensitive.</p>
+                    <p>*Our terms of use and privacy policies apply to all visitors who access our website.</p>
+                    <p>By submitting your registration, you are in agreement with these terms.</p>
                 </div>
 
             </form>
