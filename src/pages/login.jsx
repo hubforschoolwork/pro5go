@@ -8,21 +8,17 @@ function Logins() {
       
 {/* <div className='form-container'> */}
   <div className='container-title'>
-    <div className="row">
+    {/* {/* <div className="row"> */}
       <div className="col">
-        <h1>Winter Wonderland</h1>
+        <h1>Login</h1>
       </div>
     </div>
-  </div>    
-{/* </div> */}
-
-<div className="form-container">
-  <h1>Login</h1>
-</div>
+  {/* </div>    
+</div> */}
 
 <Loginform />          
 
-    </>
+</>
     );
 }
 
