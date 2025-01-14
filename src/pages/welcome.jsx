@@ -5,7 +5,8 @@ import Welcomebutton from '../components/welcomebutton.jsx';
 
 function Welcome() {
   return (
-    <>
+  <>
+  <div className='container'>
     <div className='container-title'>
       <div className="row">
         <div className="col">
@@ -13,6 +14,7 @@ function Welcome() {
         </div>
       </div>
     </div>
+
 
       <div className='container text-center' id='santaset'>
         <div className="row">
@@ -32,10 +34,16 @@ function Welcome() {
       </div>
 
     <div className='container'>
-      <div className="col-md-6 offset-md-3">
+      <div className="row">
+        <div className="col-md-4">
+          {/* <img src="src/assets/man-498473_1280.jpg" alt="Man" className="img-fluid rounded-start" style={{ height: "100%", objectFit: "cover" }}/>
+        </div>
+      <div className="col-md-6 offset-md-3"> */}
       <Welcomebutton />
       </div>
     </div>
+    </div>
+</div>    
     </>
   );
 } 

@@ -19,18 +19,6 @@
     justify-content: center;
 }
 
-/* .form-grid {
-    display: grid;
-    grid-template-columns: 200px auto;
-    gap: 15px;
-    align-items: left;
-    text-align: left;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    justify-content: center;
-    align-items: center;
-} */
-
 label {
     text-align: left;
     padding-top:  10%;
