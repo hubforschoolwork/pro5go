@@ -11,7 +11,7 @@
     border: 5px solid rgb(247, 128, 128);
     text-align: center;
     margin-bottom: 70px;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 4%;
     height: 6rem;
     width: 75rem;
@@ -45,7 +45,7 @@
     border-radius: 10%;
   }
   
-/* .welcome-button {
+.welcome-button {
     background-color: white;
     color: black;
     border-radius:20px;
@@ -56,8 +56,8 @@
     padding: 0%;
     align-items: center;
     font-size: 25px;
-    /* outline: auto; */
-/* } */
+    outline: auto;
+}
 
 /* .welcomelink {
     margin-top: 30%;
