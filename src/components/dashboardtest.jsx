@@ -23,8 +23,6 @@ function Dashboard1() {
     }, []);
 
     return <div>{message}</div>;
-
-    
 }
 
 export default Dashboard1;
