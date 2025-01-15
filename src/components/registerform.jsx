@@ -45,21 +45,24 @@ function Register() {
         <>
         <div className="container text-center-main">
             <form onSubmit={handleSubmit}>
-                <div className='form-grid'>
+                <div className='form-grid' style={{ textAlign: 'left', marginLeft: '0' }}>
                     <label>Username:
-                        <input type="text" id='username' name="username" value={formData.username} onChange={handleChange} />
+                        <input type="text" id='username' name="username" value={formData.username} onChange={handleChange}
+                         style={{ width: '250%', padding: '1px', boxSizing: 'border-box' }}  />
                     </label>
                 </div>
 
-                <div className='form-grid'>
+                <div className='form-grid' style={{ textAlign: 'left', marginLeft: '0' }}>
                     <label>Password:
-                        <input type="password" id='password' name="password" value={formData.password} onChange={handleChange} />
+                        <input type="password" id='password' name="password" value={formData.password} onChange={handleChange}
+                         style={{ width: '250%', padding: '1px', boxSizing: 'border-box' }} />
                     </label>
                 </div>
 
-                <div className='form-grid'>
-                    <label>Re-Enter Password:
-                        <input type="password" id='repeatpassword' name="repeatpassword" value={formData.repeatpassword} onChange={handleChange} />
+                <div className='form-grid' style={{ textAlign: 'left', marginLeft: '0' }}>
+                    <label>Re-enter Password:
+                        <input type="password" id='repeatpassword' name="repeatpassword" value={formData.repeatpassword} onChange={handleChange}
+                         style={{ width: '250%', padding: '1px', boxSizing: 'border-box' }} />
                     </label>
                 </div>
 
@@ -81,3 +84,5 @@ function Register() {
 }
 
 export default Register;
+
+
