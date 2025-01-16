@@ -3,6 +3,7 @@ import { useAuth } from '../js/AuthContext';
 import Dashboard1 from '../components/dashboardtest.jsx';
 import Sidebar from '../components/sidebar.jsx';
 import Dashboardmain from '../components/dashboardmain.jsx';
+import './dashboard.css';
 
 const Dashboard = () => {
     const { user } = useAuth();
