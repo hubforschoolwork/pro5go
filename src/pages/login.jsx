@@ -1,6 +1,7 @@
 import React from 'react';
-import Loginform from '../components/loginforms.jsx';
-import './login.css'
+import Login from '../components/loginforms.jsx';
+import './login.css';
+
 
 function Logins() {
     return (
@@ -11,7 +12,7 @@ function Logins() {
       </div>
       </div>
 
-<Loginform />          
+<Login />          
 
 </>
     );

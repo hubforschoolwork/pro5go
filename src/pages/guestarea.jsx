@@ -7,7 +7,7 @@ function Guest() {
         <div className="form-container">
     
         <div>
-        <h3>Hello Winter Fan!</h3>
+        <h2>Hello Winter Fan!</h2>
             
             <Highlights />
         </div>

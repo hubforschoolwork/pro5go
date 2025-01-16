@@ -21,6 +21,7 @@ import Addit from './components/addit.jsx';
 import Attitude from './components/attitude.jsx';
 import ForumForm from './components/forumform.jsx';
 
+
 import TopicPage from './components/outdoortop'; // Assuming 'outdoortop.jsx' has been renamed according to your naming convention
 // import TopicList from './components/outdoortop.jsx'; // Make sure this imports from the correct path
 
@@ -53,6 +54,7 @@ function App() {
           <Route path="/forum" element={<ForumForm />} />
 
           <Route path="/topic/:topicName" component={({ match }) => <TopicPage topic={match.params.topicName} />} />
+
 
         </Routes>
       </div>
