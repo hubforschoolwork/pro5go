@@ -6,7 +6,7 @@ import './sports.css'
 function Sports() {
     return (
         <>
-        {/* <Dashboard /> */}
+
         <Sidebar />
 
         <div className="form-container">

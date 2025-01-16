@@ -1,5 +1,5 @@
 import React from 'react';
-import '../pages/giftshopping.css'; // Import custom styles (optional)
+import '../pages/giftshopping.css';
 
 
 function Giftshoppingbag() {

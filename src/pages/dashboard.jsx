@@ -19,7 +19,7 @@ const Dashboard = () => {
             
             <div className="d-flex">
                 <div className="content p-4" style={{ marginLeft: '250px', width: '100%' }}>
-                {user ? <h1>Welcome {user}</h1> : <h1>Please log in</h1>} {/* Accessing user directly */}
+                {user ? <h2>Welcome {user}</h2> : <h2>Please log in</h2>} {/* Accessing user directly */}
                 </div>
             </div>
         </>
