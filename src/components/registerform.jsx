@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 function Register() {
-    const [formData, setFormData] = useState({ username: '', password: '', repeatpassword: '' });
+    const [formData, setFormData] = useState({ username: '', password: '' });
+    // const [formData, setFormData] = useState({ username: '', password: '', repeatpassword: '' });
     const [submissionStatus, setSubmissionStatus] = useState('');
 
     const handleChange = (event) => {
@@ -14,16 +15,18 @@ function Register() {
         event.preventDefault();
 
         // Check for empty fields
-        if (!formData.username || !formData.password || !formData.repeatpassword) {
+        if (!formData.username ||!formData.password) {
+
+        // if (!formData.username || !formData.password || !formData.repeatpassword) {
             alert('All fields are required!');
             return;
         }
 
         // Check if passwords match
-        if (formData.password !== formData.repeatpassword) {
-            alert('Passwords do not match!');
-            return;
-        }
+        // if (formData.password !== formData.repeatpassword) {
+        //     alert('Passwords do not match!');
+        //     return;
+        // }
 
 // ********************************************
 //         ("http://localhost:3000/api/login", formData);
@@ -38,16 +41,35 @@ function Register() {
         }
 
          // Reset form data
-        setFormData({ username: '', password: '', repeatpassword: '' });
+        setFormData({ username: '', password: '' });
+        // setFormData({ username: '', password: '', repeatpassword: '' });
     };
 
     return (
         <>
+        <div className="d-flex justify-content-center">
+        <div className="card mb-3 me-3" style={{ maxWidth: "800px" }}>
+          <div className="row g-0">
+            <div className="col-md-5">
+              <img src="src/assets/man-498473_1280.jpg" className="img-fluid rounded-start" alt="..." style={{ height: "100%", width: "200%", objectFit: "cover" }} />
+            </div>
+            <div className="col-md-7">
+              <div className="card-body">
+                <h5 className="card-title">Register</h5>
+                <div className="card-text"></div>
+
+
+
         <div className="container text-center-main">
             <form onSubmit={handleSubmit}>
                 <div className='form-grid' style={{ textAlign: 'left', marginLeft: '0' }}>
                     <label>Username:
-                        <input type="text" id='username' name="username" value={formData.username} onChange={handleChange}
+                        <input
+                            type="text" 
+                            id='username' 
+                            name="username" 
+                            value={formData.username} 
+                            onChange={handleChange}
                          style={{ width: '250%', padding: '1px', boxSizing: 'border-box' }}  />
                     </label>
                 </div>
@@ -73,12 +95,21 @@ function Register() {
 
                 <div className='container-policy'>
                     <p>* Usernames and passwords are case sensitive.</p>
-                    <p>* Our terms of use and privacy policies apply to all visitors who access our website.</p>
-                    <p>By submitting your registration, you are in agreement with these terms.</p>
+                    <p>* By submitting your registration, you are in agreement with these terms.</p>
                 </div>
 
             </form>
         </div>
+
+
+        </div>
+            </div>
+          </div>
+        </div>
+
+</div>
+
+
         </>
     );
 }
