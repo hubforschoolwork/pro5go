@@ -93,13 +93,13 @@ function Login() {
 
 {/* ****************************************************************** */}
 
-        <div className="d-flex">
+        <div className="d-flex justify-content-center">
         <div className="card mb-3 me-3" style={{ maxWidth: "800px" }}>
           <div className="row g-0">
-            <div className="col-md-4">
+            <div className="col-md-5">
               <img src="src/assets/man-498473_1280.jpg" className="img-fluid rounded-start" alt="..." style={{ height: "100%", width: "200%", objectFit: "cover" }} />
             </div>
-            <div className="col-md-8">
+            <div className="col-md-7">
               <div className="card-body">
                 <h5 className="card-title">Login</h5>
                 <div className="card-text">
