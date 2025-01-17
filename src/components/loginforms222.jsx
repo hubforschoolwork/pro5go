@@ -42,7 +42,15 @@ function Login() {
 
     return (
         <>
-        <div className="container text-center-main">
+      <div className='container text-center' id='santaset'>
+        <div className="row">
+          <div className="col">
+            <img src="src/assets/santa-claus-1819933_1280.jpg" alt="Santa Claus" className="img-fluid custom-img-outline" style={{ height: '300px', width: '700px' }}/>
+          </div>
+          </div>
+          </div>
+
+          <div className="col-8 middle-column">
             <form onSubmit={handleSubmit}>
                 {error && <div className="error-message">{error}</div>}
 
@@ -90,83 +98,65 @@ function Login() {
 
             </form>
         </div>
-
-{/* ****************************************************************** */}
-
-        <div className="d-flex">
-        <div className="card mb-3 me-3" style={{ maxWidth: "540px" }}>
-          <div className="row g-0">
-            <div className="col-md-4">
-              <img src="src/assets/man-498473_1280.jpg" className="img-fluid rounded-start" alt="..." style={{ height: "100%", objectFit: "cover" }} />
-            </div>
-            <div className="col-md-8">
-              <div className="card-body">
-                <h5 className="card-title">Login</h5>
-                <div className="card-text">
-                    
-                <div className="container text-center-main">
-                <form onSubmit={handleSubmit}>
-                {error && <div className="error-message">{error}</div>}
-
-
-                 <div className="form-grid">
-                    <label>
-                        Username:
-                        <input
-                            type="text"
-                            id="username"
-                            name="username"
-                            value={formData.username}
-                            onChange={handleChange}
-                            required // Adds HTML5 validation for required field
-                        />
-                    </label>
-                    </div>
-                    </form>  
-                    
-                    
-                    <div className="form-grid">
-                    <label>
-                        Password:
-                        <input
-                            type="password"
-                            id="password"
-                            name="password"
-                            value={formData.password}
-                            onChange={handleChange}
-                            required // Adds HTML5 validation for required field
-                        />
-                    </label>
-                </div>  
-                    
-                    
-                <div className="form-grid">
-                    <button type="submit">Submit</button>
-                </div>
-
-
-                <div className="container-policy">
-                    <p>*Usernames and passwords are case sensitive.</p>
-                </div>   
-                    
-                    
-                    
-                    
-                    
-                    </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-</div>
-</div>
-
-
         </>
     );
 }
 
 export default Login;
 
+
+
+// ********************************************************
+// *****************************************************************
+
+// import React from 'react';
+// import './login.css';
+// import Welcomebutton from '../components/welcomebutton.jsx';
+
+
+// function Welcome() {
+//   return (
+//   <>
+//   <div className='container'>
+//     <div className='container-title'>
+//       <div className="row">
+//         <div className="col">
+//           <h1>Winter Wonderland</h1>
+//         </div>
+//       </div>
+//     </div>
+
+
+//       <div className='container text-center' id='santaset'>
+//         <div className="row">
+//           <div className="col">
+//             <img src="src/assets/santa-claus-1819933_1280.jpg" alt="Santa Claus" className="img-fluid custom-img-outline" style={{ height: '300px', width: '700px' }}/>
+//           </div>
+
+//           <div className="col-4 middle-column">
+//             <h3>Discover the fun!</h3>
+//             <h3>Enjoy the season!</h3>
+//           </div>
+          
+//           <div className="col">
+//             <img src="src/assets/cocoa-1908020_1280.jpg" alt="Cocoa" className="img-fluid custom-img-outline" style={{ height: '300px', width: '700px' }}/>
+//           </div>
+//         </div>
+//       </div>
+
+//     <div className='container'>
+//       <div className="row">
+//         <div className="col-md-4">
+//           {/* <img src="src/assets/man-498473_1280.jpg" alt="Man" className="img-fluid rounded-start" style={{ height: "100%", objectFit: "cover" }}/>
+//         </div>
+//       <div className="col-md-6 offset-md-3"> */}
+//       <Welcomebutton />
+//       </div>
+//     </div>
+//     </div>
+// </div>    
+//     </>
+//   );
+// } 
+
+// export default Welcome;
