@@ -42,7 +42,7 @@ function Login() {
 
     return (
         <>
-        <div className="container text-center-main">
+        {/* <div className="container text-center-main">
             <form onSubmit={handleSubmit}>
                 {error && <div className="error-message">{error}</div>}
 
@@ -89,15 +89,15 @@ function Login() {
 
 
             </form>
-        </div>
+        </div> */}
 
 {/* ****************************************************************** */}
 
         <div className="d-flex">
-        <div className="card mb-3 me-3" style={{ maxWidth: "540px" }}>
+        <div className="card mb-3 me-3" style={{ maxWidth: "800px" }}>
           <div className="row g-0">
             <div className="col-md-4">
-              <img src="src/assets/man-498473_1280.jpg" className="img-fluid rounded-start" alt="..." style={{ height: "100%", objectFit: "cover" }} />
+              <img src="src/assets/man-498473_1280.jpg" className="img-fluid rounded-start" alt="..." style={{ height: "100%", width: "200%", objectFit: "cover" }} />
             </div>
             <div className="col-md-8">
               <div className="card-body">
@@ -122,7 +122,7 @@ function Login() {
                         />
                     </label>
                     </div>
-                    </form>  
+                     
                     
                     
                     <div className="form-grid">
@@ -148,8 +148,9 @@ function Login() {
                 <div className="container-policy">
                     <p>*Usernames and passwords are case sensitive.</p>
                 </div>   
-                    
-                    
+                 
+            </form>                
+            
                     
                     
                     

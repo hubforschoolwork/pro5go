@@ -59,12 +59,12 @@ function Register() {
                     </label>
                 </div>
 
-                <div className='form-grid' style={{ textAlign: 'left', marginLeft: '0' }}>
+                {/* <div className='form-grid' style={{ textAlign: 'left', marginLeft: '0' }}>
                     <label>Re-enter Password:
                         <input type="password" id='repeatpassword' name="repeatpassword" value={formData.repeatpassword} onChange={handleChange}
                          style={{ width: '250%', padding: '1px', boxSizing: 'border-box' }} />
                     </label>
-                </div>
+                </div> */}
 
                 <div className='form-grid'>
                     <button type="submit" id='button'>Submit</button>
@@ -84,5 +84,8 @@ function Register() {
 }
 
 export default Register;
+
+
+
 
 

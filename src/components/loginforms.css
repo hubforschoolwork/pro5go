@@ -13,7 +13,7 @@
     color: #343a40; /* Dark gray text color */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Box shadow effect for text */
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 
@@ -24,6 +24,12 @@
 
 .form-grid button[type="submit"] {
     margin-bottom: 40px;
-    
+   
+}
 
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:3%;
 }
