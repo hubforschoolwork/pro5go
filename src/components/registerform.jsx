@@ -47,7 +47,7 @@ function Register() {
 
     return (
         <>
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center" style={{ marginTop: "25px "}}>
         <div className="card mb-3 me-3" style={{ maxWidth: "800px" }}>
           <div className="row g-0">
             <div className="col-md-5">
@@ -86,6 +86,7 @@ function Register() {
                         name="password" 
                         value={formData.password} 
                         onChange={handleChange}
+                        required // Adds HTML5 validation for required field
                         />
                         {/* style={{ width: '250%', padding: '1px', boxSizing: 'border-box' }} /> */}
                     </label>
@@ -118,7 +119,6 @@ function Register() {
         </div>
 
 </div>
-
 
         </>
     );
