@@ -62,7 +62,8 @@ function Register() {
 
         <div className="container text-center-main">
             <form onSubmit={handleSubmit}>
-                <div className='form-grid' style={{ textAlign: 'left', marginLeft: '0' }}>
+                <div className='form-grid'>
+                {/* <div className='form-grid' style={{ textAlign: 'left', marginLeft: '0' }}>     */}
                     <label>Username:
                         <input
                             type="text" 
@@ -70,14 +71,23 @@ function Register() {
                             name="username" 
                             value={formData.username} 
                             onChange={handleChange}
-                         style={{ width: '250%', padding: '1px', boxSizing: 'border-box' }}  />
+                            required // Adds HTML5 validation for required field
+                            />
+                            {/* // style={{ width: '250%', padding: '1px', boxSizing: 'border-box' }}  /> */}
                     </label>
                 </div>
 
-                <div className='form-grid' style={{ textAlign: 'left', marginLeft: '0' }}>
+                <div className='form-grid'>
+                {/* <div className='form-grid' style={{ textAlign: 'left', marginLeft: '0' }}>     */}
                     <label>Password:
-                        <input type="password" id='password' name="password" value={formData.password} onChange={handleChange}
-                         style={{ width: '250%', padding: '1px', boxSizing: 'border-box' }} />
+                        <input
+                        type="password" 
+                        id='password' 
+                        name="password" 
+                        value={formData.password} 
+                        onChange={handleChange}
+                        />
+                        {/* style={{ width: '250%', padding: '1px', boxSizing: 'border-box' }} /> */}
                     </label>
                 </div>
 
