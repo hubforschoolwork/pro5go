@@ -6,8 +6,8 @@ const Highlights = () => {
 <>
 <div className="row row-cols-1 row-cols-md-3 g-3">
   <div className="col mb-3">
-  <div className="card h-100">
-    <img src="src\assets\skates-3623008_1280.jpg" className="card-img-top" alt="skates" style={{ height: '250px', width: '100%', objectFit: "cover" }}/>
+  <div className="card h-100" style={{ border: '5px solid #f86969' }}>
+    <img src="src\assets\skates-3623008_1280.jpg" className="card-img-top" alt="skates" style={{ height: '250px', width: '100%', objectFit: 'cover' }}/>
         <div className="card-body d-flex flex-column">
         <h5 className="card-title">Activities</h5>
         <p className="card-text">Here's a list of the topics you can explore:</p>
@@ -18,8 +18,6 @@ const Highlights = () => {
         </div>
   </div>
   </div>
-
-
   
 
 <div className="col mb-3">
@@ -34,7 +32,7 @@ const Highlights = () => {
   </div>
   </div>
 
- 
+
 <div className="col mb-3">
   <div className="card h-100">
     <img src="src\assets\apple-1282241_1280.jpg" className="card-img-top" alt="apple" style={{ height: '250px', width: '100%', objectFit: "cover" }}/>
