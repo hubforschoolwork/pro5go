@@ -7,7 +7,11 @@ function Guest() {
         <div className="form-container">
     
         <div>
-        <h2>Hello Winter Fan!</h2>
+        <h1>Hello Winter Fan!</h1>
+        
+        <h2>Welcome to Winter Wonderland's Guest Area!</h2>
+
+        <h3>Feel free to explore and enjoy the magic of the season!</h3>
             
             <Highlights />
         </div>

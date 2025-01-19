@@ -5,3 +5,11 @@
 .container-g {
     font-size: 75px;
 }
+
+.form-container h1, h2, h3 {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
