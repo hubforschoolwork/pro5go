@@ -8,8 +8,8 @@ function Guest() {
     
         <div>
         <h1>Hello Winter Fan!</h1>     
-        <h3>Welcome to Winter Wonderland's Guest Area!</h3>
-        <h3>Feel free to explore and enjoy the magic of the season!</h3>
+        <h3>Here's a sneak peak into what you can find on this website!</h3>
+
         </div>
 
         <div className="form-container-2">
