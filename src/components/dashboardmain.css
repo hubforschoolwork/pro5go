@@ -13,6 +13,7 @@
     font-size: 30px;
     color: black;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .content {
@@ -26,7 +27,7 @@
     border: 5px solid rgb(247, 128, 128);
     background-color: white;
     border-radius: 5%;
-    margin-left: 250px;
+    /* margin-left: 250px; */
 }
 
 
