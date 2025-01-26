@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from '../components/sidebar.jsx';
 import Indoorgalore from '../components/indoorsp.jsx';
 import './indoor.css'
+import TopicPage from '../components/outdoortop.jsx';
 
 function Indoor() {
     return (
@@ -15,6 +16,8 @@ function Indoor() {
 
         <Indoorgalore />
 
+
+        <TopicPage />
         </>
     );
 }
