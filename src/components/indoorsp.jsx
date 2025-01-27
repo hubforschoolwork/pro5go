@@ -1,4 +1,5 @@
 import React from 'react';
+import TopicPage from '../components/outdoortop.jsx';
 
 
 function Indoorgalore() {
@@ -13,17 +14,25 @@ function Indoorgalore() {
         </div>
         </div>
 
-        <div className="content p-4" style={{ marginLeft: '225px', marginBottom: '5px' }}></div>
-        <div className='container text-center-3' id='santaset'>
-        <div className="row">
-            <div className="col">
-                <img src="src/assets/cookie-1065893_1280.jpg" alt="Santa Claus"
-                className="img-fluid custom-img-outline"
-                style={{ height: '300px', width: '400px', marginLeft: '225px' }}/>
-            </div>
-        </div>
-        </div>
+        <TopicPage />
 
+
+        {/* <div className='container text-center' id='santaset' style={{ marginLeft: '150px' }}>
+        <div className="row"> */}
+          {/* <div className="col">
+            <img src="src/assets/santa-claus-1819933_1280.jpg" alt="Santa Claus" className="img-fluid custom-img-outline" style={{ height: '300px', width: '700px' }}/>
+          </div> */}
+{/* 
+          <div className="col-6 middle-column">
+
+          <TopicPage />
+          </div> */}
+          
+          {/* <div className="col">
+            <img src="src/assets/cocoa-1908020_1280.jpg" alt="Cocoa" className="img-fluid custom-img-outline" style={{ height: '300px', width: '700px' }}/>
+          </div> */}
+        {/* </div>
+      </div> */}
 
 
     </>

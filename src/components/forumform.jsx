@@ -22,6 +22,7 @@ function ForumForm({ onSubmit }) {
           value={text}
           onChange={handleChange}
           placeholder="Ask or answer a question..."
+          // style={{ width: '100%', height: '100px' }}
         />
       </div>
 
