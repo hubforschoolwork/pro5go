@@ -4,7 +4,7 @@ import React from 'react';
 function Attitude() {
   return (
     <>
-      <div className="d-flex">
+      <div className="d-flex" style={{marginLeft: "300px"}}>
         <div className="card mb-3 me-3" style={{ maxWidth: "540px" }}>
           <div className="row g-0">
             <div className="col-md-4">
@@ -18,21 +18,8 @@ function Attitude() {
             </div>
           </div>
         </div>
+    </div>
 
-        <div className="card mb-3" style={{ maxWidth: "540px" }}>
-          <div className="row g-0">
-            <div className="col-md-4">
-              <img src="src/assets/man-498473_1280.jpg" className="img-fluid rounded-start" alt="..." style={{ height: "100%", objectFit: "cover" }} />
-            </div>
-            <div className="col-md-8">
-              <div className="card-body">
-                <h5 className="card-title">Another Activity</h5>
-                <p className="card-text">This is another card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </>
   );
 }

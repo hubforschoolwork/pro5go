@@ -21,21 +21,25 @@ function ForumForm({ onSubmit }) {
           className="form-control"
           value={text}
           onChange={handleChange}
-          placeholder="Ask or answer a question..."
+          placeholder="Ask or answer a question here..."
           style={{ width: '200%', height: '100px' }}
         />
       </div>
 
-      <button type="submit" className="btn btn-primary btn-lg">Submit</button>
-      <button type="button" className="btn btn-secondary btn-lg button-spacing" onClick={() => setText('')}>Back</button>
-    </form>
+
+
+      <div className="button-container">
+      {/* <button type="submit" className="btn btn-primary btn-lg">Submit</button>
+      <button type="button" className="btn btn-secondary btn-lg button-spacing" onClick={() => setText('')}>Back</button> */}
+
+      <button type="submit" id="sub2" className="btn btn-primary btn-lg">Submit</button>
+      {/* <button type="button" className="btn btn-secondary btn-lg" onClick={() => setText('')}>Back</button> */}
+    </div>
+
+  //  </form>
   );
 }
 
 export default ForumForm;
-
-
-
-
 
 
