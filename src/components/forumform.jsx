@@ -27,16 +27,12 @@ function ForumForm({ onSubmit }) {
       </div>
 
 
-
       <div className="button-container">
-      {/* <button type="submit" className="btn btn-primary btn-lg">Submit</button>
-      <button type="button" className="btn btn-secondary btn-lg button-spacing" onClick={() => setText('')}>Back</button> */}
+        <button type="submit" id="sub2" className="btn btn-primary btn-lg">Submit</button>
+      </div>
 
-      <button type="submit" id="sub2" className="btn btn-primary btn-lg">Submit</button>
-      {/* <button type="button" className="btn btn-secondary btn-lg" onClick={() => setText('')}>Back</button> */}
-    </div>
+  </form>
 
-  //  </form>
   );
 }
 
