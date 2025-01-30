@@ -1,8 +1,22 @@
 .form-container {
 
-    color: black;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    color: #343a40;
+    /* color: black; */
+    text-shadow: 2px 2px 4px darkgray(0, 0, 0, 0.5);
+
     margin-top: 40px;
+    color:  darkgray;
+    color: darkred;
 }
 
+.container-title-outdoor {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 5px solid rgb(247, 128, 128);
+    text-align: center;
+    /* margin-bottom: 10px; */
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border-radius: 4%;
+    height: 6rem;
+    width: 45rem;
+  }

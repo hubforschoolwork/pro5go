@@ -6,7 +6,7 @@ function Questionit() {
     return (
         <>
     <div className="form-container" style={{ marginLeft: '200px' }}>
-            <h4>Get great ideas, tips and inspiration from our Winter Wonderland community.</h4>            
+            <h4>Ideas, tips and inspiration are a question away!</h4>            
         </div>
 
         </>

@@ -25,11 +25,11 @@ function Outdoor() {
         <Questionit />
         <TopicPage /> 
 
-
-        
-               
+              
         {/* <Questionbutton /> */}
         {/* <Attitude /> */}
+
+
 
         </>
     );
