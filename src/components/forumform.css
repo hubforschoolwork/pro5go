@@ -6,6 +6,7 @@
 
   .form-group {
     margin-bottom: 20px;
+    justify-items: center;
   }
 
   .form-control {

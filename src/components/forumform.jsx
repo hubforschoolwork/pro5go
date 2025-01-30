@@ -22,12 +22,12 @@ function ForumForm({ onSubmit }) {
           value={text}
           onChange={handleChange}
           placeholder="Ask or answer a question here..."
-          style={{ width: '200%', height: '100px' }}
+          style={{ width: '200%', height: '100px', marginLeft: '200px' }}
         />
       </div>
 
 
-      <div className="button-container">
+      <div className="button-container"  style={{ marginLeft: '200px'}}>
         <button type="submit" id="sub2" className="btn btn-primary btn-lg">Submit</button>
       </div>
 
