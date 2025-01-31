@@ -6,6 +6,7 @@
     margin-top: 40px;
     color:  darkgray;
     color: darkred;
+    margin-bottom: 40px;
 }
 
 .container-title-outdoor {
@@ -14,7 +15,7 @@
     border: 5px solid rgb(247, 128, 128);
     text-align: center;
     /* margin-bottom: 10px; */
-    margin-top: 1px;
+    margin-top: 0px;
     margin-bottom: 1px;
     border-radius: 4%;
     height: 6rem;

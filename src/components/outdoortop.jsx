@@ -28,7 +28,7 @@ function TopicPage({ topic }) {
   };
 
   return (
-    <div className="container">
+    <div className="container-top">
       <h1>{topic}</h1>
       <ForumForm onSubmit={handleFormSubmit} />
       <div className="mt-4">
