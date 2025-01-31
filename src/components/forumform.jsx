@@ -18,17 +18,17 @@ function ForumForm({ onSubmit }) {
     <form onSubmit={handleSubmit}>
       <div className="form-group">
         <textarea
-          className="form-control"
+          className="form-control textarea-outline"
           value={text}
           onChange={handleChange}
-          placeholder="Ask or answer a question here..."
-          style={{ width: '200%', height: '100px', marginLeft: '200px' }}
+          placeholder="Ask a question here..."
+          style={{ width: '100%', height: '100px', marginLeft: '200px' }}
         />
       </div>
 
 
       <div className="button-container"  style={{ marginLeft: '200px'}}>
-        <button type="submit" id="sub2" className="btn btn-primary btn-lg">Submit</button>
+        <button type="submit" id="sub2" className="btn btn-danger btn-lg">Submit</button>
       </div>
 
   </form>
