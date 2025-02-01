@@ -33,9 +33,9 @@ function TopicPage({ topic }) {
       <ForumForm onSubmit={handleFormSubmit} />
 
       {/* Include the AnswerForm for submitting answers */}
-      <div className="mt-4" style={{ width: '50%', marginLeft: '350px'}}>
+      <div className="mt-4" style={{ width: '50%', marginLeft: '310px'}}>
         {posts.map((post, index) => (
-          <div key={index} className="card mb-2" style={{ border: '5px solid rgb(247, 128, 128)' }}>
+          <div key={index} className="card mb-2" style={{ border: '5px solid rgb(247, 128, 128)', boxShadow: '0 0 0 5px white, 0 0 10px 10px darkolivegreen' }}>
             <div className="card-body">
               <p>{post.text}?</p>
               <small className="text-muted">Submitted on: {post.timestamp}</small>
