@@ -31,16 +31,19 @@ function TopicPage({ topic }) {
     <div className="container-top">
       <h1>{topic}</h1>
       <ForumForm onSubmit={handleFormSubmit} />
-      <div className="mt-4">
+
+      {/* Include the AnswerForm for submitting answers */}
+      <div className="mt-4" style={{ width: '50%', marginLeft: '350px'}}>
         {posts.map((post, index) => (
-          <div key={index} className="card mb-2">
+          <div key={index} className="card mb-2" style={{ border: '5px solid rgb(247, 128, 128)' }}>
             <div className="card-body">
               <p>{post.text}?</p>
               <small className="text-muted">Submitted on: {post.timestamp}</small>
+
               {/* Include the AnswerForm for submitting answers */}
               <AnswerForm onSubmit={(answerText) => handleAnswerSubmit(index, answerText)} />
               {post.answers.length > 0 && (
-                <div className="mt-2">
+                <div className="mt-2" style={{ border: '5px solid rgb(247, 128, 128)' }}>
                   <h5>Answers:</h5>
                   {post.answers.map((answer, answerIndex) => (
                     <div key={answerIndex} className="border p-2 mt-1">
