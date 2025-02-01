@@ -24,9 +24,7 @@ const Sidebar = () => {
                 <li className="nav-item">
                     <Link to="/indoor" className="nav-link text-white">Indoor Activities</Link>
                 </li>
-                <li className="nav-item">
-                    <Link to="/cooking" className="nav-link text-white">Cooking/Recipes</Link>
-                </li>
+
                 <li className="nav-item">
                     <Link to="/giftshopping" className="nav-link text-white">Gift Shopping</Link>
                 </li>

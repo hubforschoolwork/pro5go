@@ -8,7 +8,6 @@ import Registeruser from './pages/register.jsx';
 import Welcome from './pages/welcome.jsx';
 import Guest from './pages/guestarea.jsx';
 import Testlink from './pages/testlink.jsx';
-import Cooking from '/src/pages/cooking.jsx';
 import Dashboard from './pages/dashboard.jsx';
 import Giftshopping from './pages/giftshopping.jsx';
 import Indoor from '/src/pages/indoor.jsx';
@@ -40,7 +39,6 @@ function App() {
           <Route path="/register" element={<Registeruser />} />
           <Route path="/guestarea" element={<Guest />} />
           <Route path="/testlink" element={<Testlink />} />
-          <Route path="/cooking" element={<Cooking />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/giftshopping" element={<Giftshopping />} />
           <Route path="/indoor" element={<Indoor />} />
@@ -52,7 +50,6 @@ function App() {
           <Route path="/addit" element={<Addit />} />
           <Route path="/attitude" element={<Attitude />} />
           <Route path="/forum" element={<ForumForm />} />
-
           <Route path="/topic/:topicName" component={({ match }) => <TopicPage topic={match.params.topicName} />} />
 
 
