@@ -23,9 +23,11 @@
     margin-top:  10px;
 }
 
-/* .container d-flex {
+.container d-flex {
     margin-top: 10px;
-} */
+    margin-bottom: 20px;
+
+}
 
 .container text-center-3 {
     text-align: center;

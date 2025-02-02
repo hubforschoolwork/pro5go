@@ -5,6 +5,7 @@ function Outdoorgalore() {
     return (
         <>
 
+
 <div className='container' style={{ marginLeft: '85px'}}>
     <div className='container-title-outdoor'>
       <div className="row">
@@ -19,6 +20,8 @@ function Outdoorgalore() {
             <h4>Go outdoors and enjoy the fresh winter air!</h4>
             <h4>Ideas, tips and inspiration are a question away!</h4>
         </div>
+
+
 
          </>
     );
