@@ -7,7 +7,6 @@ import Logins from './pages/login.jsx';
 import Registeruser from './pages/register.jsx';
 import Welcome from './pages/welcome.jsx';
 import Guest from './pages/guestarea.jsx';
-import Testlink from './pages/testlink.jsx';
 import Dashboard from './pages/dashboard.jsx';
 import Indoor from '/src/pages/indoor.jsx';
 import Sports from '/src/pages/sports.jsx';
@@ -37,7 +36,6 @@ function App() {
           <Route path="/login" element={<Logins />} />
           <Route path="/register" element={<Registeruser />} />
           <Route path="/guestarea" element={<Guest />} />
-          <Route path="/testlink" element={<Testlink />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/indoor" element={<Indoor />} />
           <Route path="/sports" element={<Sports />} />
