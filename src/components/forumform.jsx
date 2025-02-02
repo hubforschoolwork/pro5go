@@ -22,7 +22,7 @@ function ForumForm({ onSubmit }) {
           value={text}
           onChange={handleChange}
           placeholder="Ask a question here..."
-          style={{ width: '50%', height: '100px', marginLeft: '200px' }}
+          style={{ width: '50%', height: '100px', marginLeft: '200px'}}
         />
       </div>
 

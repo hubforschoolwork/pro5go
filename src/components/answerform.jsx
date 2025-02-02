@@ -17,7 +17,7 @@ const AnswerForm = ({ onSubmit }) => {
     <form onSubmit={handleSubmit} className="mt-2">
       <div className="form-group">
         <textarea
-          className="form-control" style={{ border: '5px solid rgb(247, 128, 128)' }}
+          className="form-control" style={{ border: '5px solid rgb(247, 128, 128)'}}
           value={answerText}
           onChange={handleChange}
           placeholder="Write your answer here..."
