@@ -8,15 +8,15 @@ import Questionbutton from '../components/questionbutton.jsx';
 function Question() {
     return (
         <>
-        <Dashboard />
-        <Sidebar />
+            <Dashboard />
+            <Sidebar />
 
-        <div className="form-container">
+            <div className="form-container">
 
-        </div>
+            </div>
 
-        <Questionit />
-        <Questionbutton />
+            <Questionit />
+            <Questionbutton />
 
 
         </>

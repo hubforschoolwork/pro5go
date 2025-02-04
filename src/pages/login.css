@@ -9,7 +9,7 @@
 
 label {
     text-align: left;
-    padding-top:  10%;
+    padding-top: 10%;
     margin-bottom: 10px;
 }
 
@@ -24,7 +24,9 @@ input {
 }
 
 @media (max-width: 600px) {
-    .form-group, .form-grid {
+
+    .form-group,
+    .form-grid {
         flex-direction: column;
     }
 
@@ -43,12 +45,11 @@ input {
     border-radius: 4%;
     height: 6rem;
     width: 75rem;
-  }
+}
 
-   .container-title h1 {
+.container-title h1 {
     margin: 0;
     font-size: 3rem;
     color: #343a40;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-  }
- 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

@@ -7,13 +7,13 @@ function Sports() {
     return (
         <>
 
-        <Sidebar />
+            <Sidebar />
 
-        <div className="form-container">
+            <div className="form-container">
 
-        </div>
+            </div>
 
-        <Sportfun />
+            <Sportfun />
 
         </>
     );

@@ -10,13 +10,11 @@ function Outdoor() {
     return (
         <>
 
-        <Sidebar />
+            <Sidebar />
 
+            <Outdoorgalore />
 
-        <Outdoorgalore />
-
-        <TopicPage /> 
-
+            <TopicPage />
 
         </>
     );
