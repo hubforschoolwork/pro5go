@@ -7,7 +7,6 @@ const Dashboardmain = () => {
         <div className="container d-flex">
 
             <div className="content p-4">
-            {/* <div className="content p-4" style={{ marginLeft: '250px', width: '100%' }}>                */}
                 <h1>Welcome</h1>
                 <h1>to the</h1>
                 <h1>Dashboard</h1>

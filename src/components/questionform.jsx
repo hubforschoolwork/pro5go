@@ -1,5 +1,5 @@
 import React from 'react';
-// import './cooking.css'
+
 
 
 function Questionit() {

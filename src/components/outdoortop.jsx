@@ -33,21 +33,19 @@ function TopicPage({ topic }) {
       <h1>{topic}</h1>
       <ForumForm onSubmit={handleFormSubmit} />
 
-      {/* Include the AnswerForm for submitting answers */}
       <div className="mt-4" style={{ width: '50%', marginLeft: '310px'}}>
         {posts.map((post, index) => (
           <div key={index} className="card mb-2"
-          //  style={{ border: '5px solid rgb(247, 128, 128)',
+
 
             style={{ border: '5px solid  rgb(247, 128, 128)',
             boxShadow: '0 0 0 2px white, 0 0 7px 7px lightblue' }}>
-{/* 
-           boxShadow: '0 0 0 5px white, 0 0 10px 10px darkolivegreen' }}> */}
+
             <div className="card-body">
               <p>{post.text}?</p>
               <small className="text-muted">Submitted on: {post.timestamp}</small>
 
-              {/* Include the AnswerForm for submitting answers */}
+
               <AnswerForm onSubmit={(answerText) => handleAnswerSubmit(index, answerText)} />
               {post.answers.length > 0 && (
                 <div className="mt-2" style={{ border: '5px solid rgb(247, 128, 128)'}}>

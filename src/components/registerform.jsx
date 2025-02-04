@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function Register() {
     const [formData, setFormData] = useState({ username: '', password: '' });
-    // const [formData, setFormData] = useState({ username: '', password: '', repeatpassword: '' });
+
     const [submissionStatus, setSubmissionStatus] = useState('');
 
     const handleChange = (event) => {
@@ -17,19 +17,12 @@ function Register() {
         // Check for empty fields
         if (!formData.username ||!formData.password) {
 
-        // if (!formData.username || !formData.password || !formData.repeatpassword) {
+
             alert('All fields are required!');
             return;
         }
 
-        // Check if passwords match
-        // if (formData.password !== formData.repeatpassword) {
-        //     alert('Passwords do not match!');
-        //     return;
-        // }
 
-// ********************************************
-//         ("http://localhost:3000/api/login", formData);
         try {
             const response = await axios.post('http://localhost:3000/api/register', {
                 username: formData.username,
@@ -42,7 +35,7 @@ function Register() {
 
          // Reset form data
         setFormData({ username: '', password: '' });
-        // setFormData({ username: '', password: '', repeatpassword: '' });
+
     };
 
     return (
@@ -51,7 +44,7 @@ function Register() {
         <div className="card mb-3 me-3" style={{ maxWidth: "800px" }}>
           <div className="row g-0">
             <div className="col-md-5">
-              <img src="src/assets/man-498473_1280.jpg" className="img-fluid rounded-start" alt="..." style={{ height: "100%", width: "200%", objectFit: "cover" }} />
+              <img src="src/assets/man-498473_1280.jpg" className="img-fluid rounded-start" alt="..." style={{ height: "98%", width: "200%", objectFit: "cover" }} />
             </div>
             <div className="col-md-7">
               <div className="card-body">
@@ -63,7 +56,6 @@ function Register() {
         <div className="container text-center-main">
             <form onSubmit={handleSubmit}>
                 <div className='form-grid'>
-                {/* <div className='form-grid' style={{ textAlign: 'left', marginLeft: '0' }}>     */}
                     <label>Username:
                         <input
                             type="text" 
@@ -73,12 +65,11 @@ function Register() {
                             onChange={handleChange}
                             required // Adds HTML5 validation for required field
                             />
-                            {/* // style={{ width: '250%', padding: '1px', boxSizing: 'border-box' }}  /> */}
                     </label>
                 </div>
 
                 <div className='form-grid'>
-                {/* <div className='form-grid' style={{ textAlign: 'left', marginLeft: '0' }}>     */}
+
                     <label>Password:
                         <input
                         type="password" 
@@ -88,16 +79,10 @@ function Register() {
                         onChange={handleChange}
                         required // Adds HTML5 validation for required field
                         />
-                        {/* style={{ width: '250%', padding: '1px', boxSizing: 'border-box' }} /> */}
+
                     </label>
                 </div>
 
-                {/* <div className='form-grid' style={{ textAlign: 'left', marginLeft: '0' }}>
-                    <label>Re-enter Password:
-                        <input type="password" id='repeatpassword' name="repeatpassword" value={formData.repeatpassword} onChange={handleChange}
-                         style={{ width: '250%', padding: '1px', boxSizing: 'border-box' }} />
-                    </label>
-                </div> */}
 
                 <div className='form-grid'>
                     <button type="submit" id='button'>Submit</button>
@@ -105,8 +90,7 @@ function Register() {
                 </div>
 
                 <div className='container-policy'>
-                    <p>* Usernames and passwords are case sensitive.</p>
-                    <p>* By submitting your registration, you are in agreement with these terms.</p>
+                    <p>*Submitting this registration is an agreement to terms.</p>
                 </div>
 
             </form>
