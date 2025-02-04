@@ -12,10 +12,9 @@
     font-size: 20px;
     border: black;
     font-size: 2rem;
-    border: 5px solid white; /* White border nearest the image */
-    box-shadow: 0 0 0 5px #f86969; /* Red border on the outside */
-    color: #343a40; /* Dark gray text color */
-
+    border: 5px solid white;
+    box-shadow: 0 0 0 5px #f86969;
+    color: #343a40;
 }
 
 

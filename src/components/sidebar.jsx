@@ -12,7 +12,6 @@ const Sidebar = () => {
 
 
     return (
-        // <div className="sidebar d-flex flex-column bg-primary bg-opacity-50 text-white vh-100">
 
         <div className="sidebar">
             <h2 className="p-3">Dashboard</h2>

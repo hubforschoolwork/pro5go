@@ -25,28 +25,28 @@ const Navbar = () => {
                         <li className="nav-item active">
                             <a className="nav-link" href="/">Home <span className="sr-only"></span></a>
                         </li>
-                      
+
                         <li className="nav-item">
                             <a className="nav-link" href="/login">Log In</a>
                         </li>
-                      
+
                         <li className="nav-item">
                             <a className="nav-link" href="/register">Register</a>
                         </li>
-                       
+
                     </ul>
                 </div>
 
                 <div className="d-flex align-items-center">
                     <span className="text-danger me-2">ENTER:</span>
-                        <a href="/login" class="btn btn-secondary me-2">Login</a>
-                        <a href="/register" class="btn btn-secondary me-2">Register</a>
+                    <a href="/login" class="btn btn-secondary me-2">Login</a>
+                    <a href="/register" class="btn btn-secondary me-2">Register</a>
                 </div>
 
 
             </div>
 
-         </nav>
+        </nav>
     );
 }
 

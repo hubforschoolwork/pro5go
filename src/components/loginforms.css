@@ -3,28 +3,25 @@
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #343a40; /* Dark gray text color */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Box shadow effect for text */
+    color: #343a40;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .text-center-main {
     text-align: center;
     font-size: 30px;
-    color: #343a40; /* Dark gray text color */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Box shadow effect for text */
+    color: #343a40;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-top: 5%;
     margin-bottom: 2%;
 }
 
-
 .form-grid input[type="password"] {
-    margin-bottom: 40px; /* Adjust the value as needed */
+    margin-bottom: 40px;
 }
-
 
 .form-grid button[type="submit"] {
     margin-bottom: 40px;
-   
 }
 
 .justify-content-center {

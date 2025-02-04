@@ -42,74 +42,74 @@ function Login() {
 
     return (
         <>
- 
-         <div className="d-flex justify-content-center">
-        <div className="card mb-3 me-3" style={{ maxWidth: "800px" }}>
-          <div className="row g-0">
-            <div className="col-md-5">
-              <img src="src/assets/man-498473_1280.jpg" className="img-fluid rounded-start" alt="..." style={{ height: "98%", width: "200%", objectFit: "cover" }} />
-            </div>
-            <div className="col-md-7">
-              <div className="card-body">
-                <h5 className="card-title">Login</h5>
-                <div className="card-text">
-                    
-                <div className="container text-center-main">
-                <form onSubmit={handleSubmit}>
-                {error && <div className="error-message">{error}</div>}
+
+            <div className="d-flex justify-content-center">
+                <div className="card mb-3 me-3" style={{ maxWidth: "800px" }}>
+                    <div className="row g-0">
+                        <div className="col-md-5">
+                            <img src="src/assets/man-498473_1280.jpg" className="img-fluid rounded-start" alt="..." style={{ height: "98%", width: "200%", objectFit: "cover" }} />
+                        </div>
+                        <div className="col-md-7">
+                            <div className="card-body">
+                                <h5 className="card-title">Login</h5>
+                                <div className="card-text">
+
+                                    <div className="container text-center-main">
+                                        <form onSubmit={handleSubmit}>
+                                            {error && <div className="error-message">{error}</div>}
 
 
-                 <div className="form-grid">
-                    <label>
-                        Username:
-                        <input
-                            type="text"
-                            id="username"
-                            name="username"
-                            value={formData.username}
-                            onChange={handleChange}
-                            required // Adds HTML5 validation for required field
-                        />
-                    </label>
+                                            <div className="form-grid">
+                                                <label>
+                                                    Username:
+                                                    <input
+                                                        type="text"
+                                                        id="username"
+                                                        name="username"
+                                                        value={formData.username}
+                                                        onChange={handleChange}
+                                                        required // Adds HTML5 validation for required field
+                                                    />
+                                                </label>
+                                            </div>
+
+
+
+                                            <div className="form-grid">
+                                                <label>
+                                                    Password:
+                                                    <input
+                                                        type="password"
+                                                        id="password"
+                                                        name="password"
+                                                        value={formData.password}
+                                                        onChange={handleChange}
+                                                        required // Adds HTML5 validation for required field
+                                                    />
+                                                </label>
+                                            </div>
+
+
+                                            <div className="form-grid">
+                                                <button type="submit">Submit</button>
+                                            </div>
+
+
+                                            <div className="container-policy">
+                                                <p>*Usernames and passwords are case sensitive.</p>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                     
-                    
-                    
-                    <div className="form-grid">
-                    <label>
-                        Password:
-                        <input
-                            type="password"
-                            id="password"
-                            name="password"
-                            value={formData.password}
-                            onChange={handleChange}
-                            required // Adds HTML5 validation for required field
-                        />
-                    </label>
-                </div>  
-                    
-                    
-                <div className="form-grid">
-                    <button type="submit">Submit</button>
+
                 </div>
-
-
-                <div className="container-policy">
-                    <p>*Usernames and passwords are case sensitive.</p>
-                </div>   
-                 
-            </form>                
-
-                    </div>
-
-              </div>
             </div>
-          </div>
-        </div>
-
-</div>
-</div>
 
 
         </>

@@ -4,18 +4,18 @@ import './login.css';
 
 
 function Logins() {
-    return (
+  return (
     <>
-<div className='container mb-5'>    
-  <div className='container-title h1'>
-        <h1>Login</h1>
-      </div>
+      <div className='container mb-5'>
+        <div className='container-title h1'>
+          <h1>Login</h1>
+        </div>
       </div>
 
-<Login />          
+      <Login />
 
-</>
-    );
+    </>
+  );
 }
 
 export default Logins;

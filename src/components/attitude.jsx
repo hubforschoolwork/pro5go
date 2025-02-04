@@ -4,7 +4,7 @@ import React from 'react';
 function Attitude() {
   return (
     <>
-      <div className="d-flex" style={{marginLeft: "300px"}}>
+      <div className="d-flex" style={{ marginLeft: "300px" }}>
         <div className="card mb-3 me-3" style={{ maxWidth: "620px" }}>
           <div className="row g-0">
             <div className="col-md-4">
@@ -18,12 +18,12 @@ function Attitude() {
                 <p className="card-text">Snowball Fight!</p>
                 <p className="card-text">Decorate the outside of your house!</p>
                 <p className="card-text">Build a snowman!</p>
-              
+
               </div>
             </div>
           </div>
         </div>
-    </div>
+      </div>
 
     </>
   );

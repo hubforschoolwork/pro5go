@@ -7,15 +7,15 @@ import Answerbutton from '../components/answerbutton.jsx';
 function Answer() {
     return (
         <>
-        <Dashboard />
-        <Sidebar />
+            <Dashboard />
+            <Sidebar />
 
-        <div className="form-container">
+            <div className="form-container">
 
-        </div>
+            </div>
 
-        <Answerit />
-        <Answerbutton />
+            <Answerit />
+            <Answerbutton />
 
         </>
     );
