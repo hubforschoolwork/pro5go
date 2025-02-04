@@ -17,10 +17,8 @@ import Topics from './components/topics';
 import Addit from './components/addit.jsx';
 import Attitude from './components/attitude.jsx';
 import ForumForm from './components/forumform.jsx';
+import TopicPage from './components/outdoortop';
 
-
-import TopicPage from './components/outdoortop'; // Assuming 'outdoortop.jsx' has been renamed according to your naming convention
-// import TopicList from './components/outdoortop.jsx'; // Make sure this imports from the correct path
 
 
 function App() {
@@ -32,6 +30,7 @@ function App() {
       <div className="App">
         <MyNavbar />
         <Routes>
+
           <Route path="/" element={<Welcome />} />
           <Route path="/login" element={<Logins />} />
           <Route path="/register" element={<Registeruser />} />
@@ -47,8 +46,7 @@ function App() {
           <Route path="/attitude" element={<Attitude />} />
           <Route path="/forum" element={<ForumForm />} />
           <Route path="/topic/:topicName" component={({ match }) => <TopicPage topic={match.params.topicName} />} />
-
-
+          
         </Routes>
       </div>
   </AuthProvider>

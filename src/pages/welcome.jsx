@@ -36,10 +36,9 @@ function Welcome() {
     <div className='container'>
       <div className="row">
         <div className="col-md-4">
-          {/* <img src="src/assets/man-498473_1280.jpg" alt="Man" className="img-fluid rounded-start" style={{ height: "100%", objectFit: "cover" }}/>
-        </div>
-      <div className="col-md-6 offset-md-3"> */}
+
       <Welcomebutton />
+      
       </div>
     </div>
     </div>
