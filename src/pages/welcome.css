@@ -1,65 +1,66 @@
 .body {
-    background-image: url('./assets/tree-6835828_1280.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
- 
-  .container-title {
-    padding: 20px;
-    background-color: #f8f9fa;
-    border: 5px solid rgb(247, 128, 128);
-    text-align: center;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    border-radius: 4%;
-    height: 6rem;
-    width: 75rem;
-  }
-
-   .container-title h1 {
-    margin: 0;
-    font-size: 3rem;
-    color: #343a40;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    
-  }
- 
-  .middle-column {
-    padding-top: 60px;
-    font-size: 50px;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+  background-image: url('./assets/tree-6835828_1280.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-  .custom-img-outline {
-    border: 5px solid white;
-    box-shadow: 0 0 0 5px #f86969;
-    border-radius: 10%;
-  }
-  
-@media (max-width: 600px) {
-    .form-group, .form-grid {
-        flex-direction: column;
-    }
+.container-title {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 5px solid rgb(247, 128, 128);
+  text-align: center;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  border-radius: 4%;
+  height: 6rem;
+  width: 75rem;
+}
 
-    label {
-        width: auto;
-    }
+.container-title h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #343a40;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.middle-column {
+  padding-top: 60px;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.custom-img-outline {
+  border: 5px solid white;
+  box-shadow: 0 0 0 5px #f86969;
+  border-radius: 10%;
+}
+
+@media (max-width: 600px) {
+
+  .form-group,
+  .form-grid {
+    flex-direction: column;
+  }
+
+  label {
+    width: auto;
+  }
 }
 
 .overlay-image {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 200px;
-    height: auto;
-  }
-  
-  .content {
-    position: relative;
-    z-index: 1;
-    color: black;
-    text-align: center;
-    padding: 20px;
-  }
-  
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 200px;
+  height: auto;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}

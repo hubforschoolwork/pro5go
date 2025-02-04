@@ -19,38 +19,36 @@ import Attitude from './components/attitude.jsx';
 import ForumForm from './components/forumform.jsx';
 import TopicPage from './components/outdoortop';
 
-
-
 function App() {
 
-   return (
+  return (
     <Router>
 
-    <AuthProvider>
-      <div className="App">
-        <MyNavbar />
-        <Routes>
+      <AuthProvider>
+        <div className="App">
+          <MyNavbar />
+          <Routes>
 
-          <Route path="/" element={<Welcome />} />
-          <Route path="/login" element={<Logins />} />
-          <Route path="/register" element={<Registeruser />} />
-          <Route path="/guestarea" element={<Guest />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/indoor" element={<Indoor />} />
-          <Route path="/sports" element={<Sports />} />
-          <Route path="/outdoor" element={<Outdoor />} />
-          <Route path="/answer" element={<Answer />} />
-          <Route path="/question" element={<Question />} />
-          <Route path="/topics" element={<Topics />} />
-          <Route path="/addit" element={<Addit />} />
-          <Route path="/attitude" element={<Attitude />} />
-          <Route path="/forum" element={<ForumForm />} />
-          <Route path="/topic/:topicName" component={({ match }) => <TopicPage topic={match.params.topicName} />} />
-          
-        </Routes>
-      </div>
-  </AuthProvider>
-  </Router>
+            <Route path="/" element={<Welcome />} />
+            <Route path="/login" element={<Logins />} />
+            <Route path="/register" element={<Registeruser />} />
+            <Route path="/guestarea" element={<Guest />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/indoor" element={<Indoor />} />
+            <Route path="/sports" element={<Sports />} />
+            <Route path="/outdoor" element={<Outdoor />} />
+            <Route path="/answer" element={<Answer />} />
+            <Route path="/question" element={<Question />} />
+            <Route path="/topics" element={<Topics />} />
+            <Route path="/addit" element={<Addit />} />
+            <Route path="/attitude" element={<Attitude />} />
+            <Route path="/forum" element={<ForumForm />} />
+            <Route path="/topic/:topicName" component={({ match }) => <TopicPage topic={match.params.topicName} />} />
+
+          </Routes>
+        </div>
+      </AuthProvider>
+    </Router>
   );
 }
 
