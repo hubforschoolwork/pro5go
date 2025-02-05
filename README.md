@@ -7,13 +7,13 @@
 
 ## Future Improvements to the App
 
-This app is a preliminary forum-style project with definite room for growth and improvement.  The following are some suggestions to add more depth to the project:
-- Make the app more “regionally based” (i.e., larger metropolitan areas – NYC, LA, San Francisco), so users can discover activities specific to a particular geographical area.
+This app has definite room for growth and improvement.  It is a good starting point and, with the following suggestions, more depth can be added to the project:
+- Add a "regional" feature to the app (i.e., larger metropolitan areas – NYC, LA, San Francisco), so users can discover activities specific to a particular geographic area.
 - Add more options to the dashboard sidebar (i.e., specific activity types in addition to categories).
-- Add a calendar feature that appears on the dashboard upon login.  This will allow for different events to automatically populate the calendar based on a user’s location/zip code.  Users can add events to their own calendar as well.
+- Add a calendar feature that appears on the dashboard upon login.  This will allow for different events to automatically populate the calendar based on a user’s location/zip code.  Users could add events to their own calendar as well.
 - Improve user’s dashboard, so they can toggle to their previous activity on the app.
 - Add “notification” feature to user’s dashboard, so user can see when a question they posted was answered.  This can be done by alerting a user on their cellphone or showing a list on their dashboard.
-- Add user profile functionality.  Once a user creates a username/password, launch a profile page with fields where the user can add more personal, but not intrusive, data about themselves, along with a photo, to tailor the experience on the app.
+- Add user profile functionality.  Once a user creates a username/password, launch a profile page with fields where the user can add more data about themselves, along with a photo, to tailor the experience on the app.
 - Make the app functional across all platforms (i.e., laptop, iPad, cellphone).
 
 
