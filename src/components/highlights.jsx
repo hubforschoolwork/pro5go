@@ -25,10 +25,9 @@ const Highlights = () => {
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title">Activities</h5>
                 <p className="card-text">Here's a list of the topics you can explore:</p>
-                <p className="card-text">Indoor/Outdoor Activities</p>
-                <p className="card-text">Sports</p>
-                <p className="card-text">Decorating</p>
-                <p className="card-text">Food</p>
+                <p className="card-text" style={{ marginBottom: '5px' }}>-Outdoor Activities</p>
+                <p className="card-text" style={{ marginBottom: '5px' }}>-Sports</p>
+                <p className="card-text" style={{ marginBottom: '5px' }}>-Indoor Activities</p>
               </div>
             </div>
           </div>
