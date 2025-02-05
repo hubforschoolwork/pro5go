@@ -38,15 +38,15 @@ This app has definite room for growth and improvement.  It is a good starting po
     - mongoose
     - nodemon
 
-### To Run Project
+### To Run App
 
   - Frontend:
     - cd to project directory (pro5go)
-    - npm run dev
+    - use command:  npm run dev
 
   - Backend:
     - cd to backend directory
-    - node server.js
+    - use command:  node server.js
 
 
 
