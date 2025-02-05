@@ -28,6 +28,11 @@ const Sidebar = () => {
                     <Link to="/sports" className="nav-link text-white">Sports</Link>
                 </li>
 
+                <li className="nav-item">
+                    <Link to="/resorts" className="nav-link text-white">Resorts</Link>
+                </li>
+
+
                 <li><button onClick={handleLogout}>Logout</button></li>
 
             </ul>
