@@ -21,34 +21,32 @@ This app has definite room for growth and improvement.  It is a good starting po
 
 ## Cloning /  Starting App
 
-- Download zip file or clone
-  -	Frontend:
-a.	Cd to app directory
-b.	Run npm install  command to install node dependencies
-c.	To run project, use the npm run dev command
-3.	Backend:
-a.	Go to Backend directory
-b.	Run npm install to install node dependencies
-c.	
+- The following frontend/backend dependencies will be required:
 
+  -	Frontend Dependencies
+    - axios
+    - bootstrap
+    - react
+    - react-dom
+    - react-router-dom
 
+  - Backend Dependencies
+    - body-parser
+    - cors
+    - dotenv
+    - express
+    - mongoose
+    - nodemon
 
-4.	Install the following:
-a.	Axios
-b.	Bootstrap
-c.	React
-d.	React-dom
-e.	React-router-dom
-f.	Cors
-g.	Body-parser
-h.	Dotenv
-i.	Mongoose
-j.	Express
-k.	Javascript
-l.	CSS
-m.	HTML
-n.	Nodemon
-o.	
+### To Run Project
+
+  - Frontend:
+    - cd to project directory (pro5go)
+    - npm run dev
+
+  - Backend:
+    - cd to backend directory
+    - node server.js
 
 
 
