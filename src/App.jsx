@@ -18,7 +18,6 @@ import Addit from './components/addit.jsx';
 import Attitude from './components/attitude.jsx';
 import ForumForm from './components/forumform.jsx';
 import TopicPage from './components/outdoortop';
-import Resorts from './pages/resorts.jsx';
 
 function App() {
 
@@ -45,7 +44,7 @@ function App() {
             <Route path="/attitude" element={<Attitude />} />
             <Route path="/forum" element={<ForumForm />} />
             <Route path="/topic/:topicName" component={({ match }) => <TopicPage topic={match.params.topicName} />} />
-            <Route path="/resorts" element={<Resorts />} />
+
 
           </Routes>
         </div>

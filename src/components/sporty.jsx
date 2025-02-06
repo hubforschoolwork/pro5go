@@ -4,21 +4,23 @@ import TopicPage from '../components/outdoortop.jsx';
 function Sportfun() {
   return (
     <>
-      <div className='container' style={{ marginLeft: '85px' }}>
-        <div className='container-title-outdoor'>
-          <div className="row">
-            <div className="col">
-              <h1>Sports</h1>
+
+      <div className="container d-flex">
+        <div className='container' style={{ marginLeft: '85px' }}>
+          <div className='container-title-outdoor'>
+            <div className="row">
+              <div className="col">
+                <h1>Sports</h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="form-container" style={{ marginLeft: '200px' }}>
-        <h4>Enjoy the outdoors with sports of the season!</h4>
-        <h4>Find a sport that's just right for you!</h4>
+        <div className="form-container" style={{ marginLeft: '200px' }}>
+          <h4>Enjoy the outdoors with sports of the season!</h4>
+          <h4>Find a sport that's just right for you!</h4>
+        </div>
       </div>
-
       <TopicPage />
     </>
   );

@@ -20,7 +20,7 @@ function Indoorgalore() {
 
         <div className="form-container" style={{ marginLeft: '200px' }}>
           <h4>Discover activities for friends and family!</h4>
-          <h4>Make your snow day a lot more fun!</h4>
+          <h4>Make your snow day inside a lot more fun!</h4>
         </div>
       </div>
 

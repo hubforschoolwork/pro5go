@@ -38,7 +38,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="d-flex align-items-center">
-                    <span className="text-danger me-2">ENTER:</span>
+                    {/* <span className="text-danger me-2">ENTER:</span> */}
                     <a href="/login" class="btn btn-secondary me-2">Login</a>
                     <a href="/register" class="btn btn-secondary me-2">Register</a>
                 </div>

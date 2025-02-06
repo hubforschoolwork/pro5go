@@ -34,7 +34,8 @@ function Login() {
             login(formData.username); // Update user in context
 
             navigate("/dashboard"); // Redirect to dashboard using navigate
-        } catch (error) {
+        }
+            catch (error) {
             console.error("Error:", error.response?.data || error.message);
             setError(error.response?.data?.error || "An error occurred. Please try again.");
         }
